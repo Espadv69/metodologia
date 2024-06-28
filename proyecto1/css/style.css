@@ -10,6 +10,11 @@ body {
     background-color: #121212;
     color: whitesmoke;
 }
+
+iframe {
+    border-radius: 1rem;
+    box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px, rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -3px 0px inset;    
+}
 /*******/
 
 /* HEADER */
@@ -44,6 +49,7 @@ nav {
         background-color: rgba(0, 0, 0, 0.6);
         transition: all 300ms ease;
         border-radius: .3rem;
+        box-shadow: rgba(0, 0, 0, 0.2) 0px 60px 40px -7px;
     }
 
     a:hover {
@@ -100,9 +106,9 @@ nav {
 /**********/
 
 /* SERVICIOS */
-.servicio-h2 {
+.servicio-contacto-h2 {
     margin-top: 1rem;
-    margin-bottom: 1rem;
+    margin-bottom: .5rem;
     text-align: center;
 }
 
@@ -120,6 +126,7 @@ nav {
 
         p {
             text-align: center;
+            color: red;
         }
     }
 }
@@ -137,3 +144,50 @@ nav {
     }
 }
 /*************/
+
+/* CONTACTO */
+.form-contacto {
+    margin: auto;
+    padding: 2rem;
+    width: 100%;
+    max-width: 400px;
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+
+    input {
+        padding: 1rem;
+        border: none;
+        outline: none;
+        border-radius: .3rem;
+        box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px, rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -3px 0px inset;
+    }
+
+    div {
+        margin-top: .5rem;
+        display: flex;
+        justify-content: space-evenly;
+
+        button {
+            padding: 1rem;
+            background: transparent;
+            border: 2px solid whitesmoke;
+            color: currentColor;
+            border-radius: .3rem;
+            transition: all 300ms linear;
+        }
+
+        .submit {
+            border: 2px solid lightgreen;
+        }
+
+        .reset {
+            border: 2px solid red;
+        }
+
+        button:hover {
+            scale: 1.1;
+        }
+    }
+}
+/************/
