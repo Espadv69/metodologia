@@ -1,3 +1,4 @@
+/* ALL */
 * {
     box-sizing: border-box;
     margin: 0;
@@ -9,7 +10,9 @@ body {
     background-color: #121212;
     color: whitesmoke;
 }
+/*******/
 
+/* HEADER */
 .img-header {
     display: flex;
     justify-content: center;
@@ -24,7 +27,9 @@ body {
         border-radius: .5rem;
     }
 }
+/**********/
 
+/* NAVBAR */
 nav {
     display: flex;
     justify-content: center;
@@ -45,7 +50,9 @@ nav {
         background-color: gray;
     }
 }
+/**********/
 
+/* VIDEOS */
 .iframe {
     margin-top: 2rem;
     display: flex;
@@ -63,7 +70,9 @@ nav {
         scale: 1.1;
     }
 }
+/**********/
 
+/* FOOTER */
 .index-footer {
     padding: 1rem;
     display: flex;
@@ -72,6 +81,7 @@ nav {
     background-color: rgba(245, 245, 245, 0.4);
 
     p {
+        cursor: pointer;
         text-align: center;
     }
 
@@ -80,3 +90,4 @@ nav {
     }
 
 }
+/**********/
