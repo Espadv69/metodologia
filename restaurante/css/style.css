@@ -14,6 +14,61 @@
 }
 /*******/
 
+/* OFF CANVAS */
+.navbar {
+    background-color: #121212;
+    overflow: hidden;
+    padding: 14px 16px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.navbar a {
+    color: #f2f2f2;
+    text-decoration: none;
+    padding: 14px 16px;
+    display: inline-block;
+}
+.navbar a:hover {
+    background-color: #ddd;
+    color: black;
+}
+.navbar .menu-icon {
+    font-size: 24px;
+    cursor: pointer;
+    color: #f2f2f2;
+}
+.offcanvas {
+    height: 100%;
+    width: 0;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    background-color: #121212;
+    overflow-x: hidden;
+    transition: 0.5s;
+    padding-top: 60px;
+}
+.offcanvas a {
+    padding: 8px 8px 8px 32px;
+    text-decoration: none;
+    font-size: 25px;
+    color: #f2f2f2;
+    display: block;
+    transition: 0.3s;
+}
+.offcanvas a:hover {
+    color: #ddd;
+}
+.offcanvas .closebtn {
+    position: absolute;
+    top: 0;
+    right: 25px;
+    font-size: 36px;
+}
+/**************/
+
 /* LOG REG */
 .form-log-reg {
     height: 100vh;
