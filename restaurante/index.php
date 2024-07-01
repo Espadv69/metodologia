@@ -8,6 +8,8 @@
         <link rel="stylesheet" href="./css/style.css">
     </head>
     <body class="index-body">
-        
+        <form action="">
+            
+        </form>
     </body>
 </html>
