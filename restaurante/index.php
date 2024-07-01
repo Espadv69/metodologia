@@ -8,6 +8,8 @@
         <link rel="stylesheet" href="./css/style.css">
     </head>
     <body class="index-body">
+
+        <!-- FORMULARIO LOGIN-->
         <form action="./php-backend/log-backend.php" method="post" class="form-log-reg">
             <h2>LOGIN</h2>
             <input type="email" name="email" placeholder="nombre@ejemplo.com" required>
