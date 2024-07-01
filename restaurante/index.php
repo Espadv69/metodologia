@@ -8,8 +8,12 @@
         <link rel="stylesheet" href="./css/style.css">
     </head>
     <body class="index-body">
-        <form action="">
-            
+        <form action="./php-backend/log-backend.php" method="post" class="form-log-reg">
+            <h2>LOGIN</h2>
+            <input type="email" name="email" placeholder="nombre@ejemplo.com" required>
+            <input type="password" name="pass" placeholder="Ingrese su contraseña" required>
+            <button>Entrar</button>
+            <p>Si aún no tienes cuenta <a href="./php/register.php">pincha aquí</a>👈</p>
         </form>
     </body>
 </html>
