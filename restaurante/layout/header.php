@@ -6,6 +6,8 @@
         <link rel="stylesheet" href="../css/style.css">
     </head>
     <body>
+
+    <!--- NAVBAR -->
         <div class="navbar">
         <span class="menu-icon" onclick="openNav()">&#9776;</span>
         <a href="#home">Inicio</a>
