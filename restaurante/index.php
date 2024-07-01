@@ -7,7 +7,7 @@
         <link rel="icon" type="image/png" href="./img/1.png">
         <link rel="stylesheet" href="./css/style.css">
     </head>
-    <body>
+    <body class="index-body">
         
     </body>
 </html>
