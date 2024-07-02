@@ -197,3 +197,16 @@ h2 {
     }
 }
 /***********/
+
+/* REQUISICIONES */
+.head-requi {
+    padding: 1rem;
+    background-color: #85ffde;
+    color: whitesmoke;
+
+    h3 {
+        text-align: center;
+        text-shadow: -1px 1px 5px black;
+    }
+}
+/*****************/
