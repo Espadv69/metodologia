@@ -14,19 +14,19 @@
 }
 
 body {
-    background-color: #FFB4C2;
+    background-color: #fff;
 }
 
 h2 {
     margin-top: 1rem;
     text-align: center;
-    color: whitesmoke;
+    color: rgb(0, 0, 0);
 }
 /*******/
 
 /* OFF CANVAS */
 .navbar {
-    background-color: #DA7297;
+    background-color: #15F5BA;
     overflow: hidden;
     padding: 14px 16px;
     display: flex;
@@ -55,7 +55,7 @@ h2 {
     z-index: 1;
     top: 0;
     left: 0;
-    background-color: #DA7297;
+    background-color: #15F5BA;
     overflow-x: hidden;
     transition: 0.5s;
     padding-top: 60px;
