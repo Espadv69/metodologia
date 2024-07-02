@@ -15,5 +15,21 @@
             <h3>Productos perecederos</h3>
         </div>
 
+        <form action="" class="form-requi">
+            <input type="text" name="" placeholder="Pollo" required>
+            <input type="text" name="" placeholder="Pollo" required>
+            <input type="text" name="" placeholder="Pollo" required>
+            <input type="text" name="" placeholder="Pollo" required>
+            <input type="text" name="" placeholder="Pollo" required>
+            <input type="text" name="" placeholder="Pollo" required>
+            <input type="text" name="" placeholder="Pollo" required>
+            <input type="text" name="" placeholder="Pollo" required>
+
+            <div>
+                <button class="btn">Enviar</button>
+                <button type="reset" class="btn btn-reset">Borrar</button>
+            </div>
+        </form>
+
     </body>
 </html>
