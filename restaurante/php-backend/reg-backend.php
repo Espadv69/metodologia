@@ -9,6 +9,7 @@ $email = $_POST["email"];
 $pass = $_POST["pass"];
 $pass = hash("sha512", $pass);
 
+// INSERT INTO TABLE
 $sql = "INSERT INTO sesion(nombre, usuario, email, pass) VALUES (
     '$nombre',
     '$usuario',
@@ -16,11 +17,23 @@ $sql = "INSERT INTO sesion(nombre, usuario, email, pass) VALUES (
     '$pass'
 )";
 
+// CHECK USER
 $check_user = mysqli_query($conn, "SELECT * FROM sesion WHERE usuario='$usuario'");
 if(mysqli_num_rows($check_user) > 0) {
     echo "
     <script>
         alert('usuario existente');
+        window.location = '../php/register.php';
+    </script>";
+    exit;
+}
+
+// CHECK EMAIL
+$check_email = mysqli_query($conn, "SELECT * FROM sesion WHERE email='$email'");
+if(mysqli_num_rows($check_user) > 0) {
+    echo "
+    <script>
+        alert('email existente');
         window.location = '../php/register.php';
     </script>";
     exit;
