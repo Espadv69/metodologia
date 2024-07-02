@@ -15,10 +15,10 @@
 
             <div id="myOffcanvas" class="offcanvas">
                 <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
-                <a href="#home">Inicio</a>
-                <a href="#about">Acerca de</a>
-                <a href="#services">Servicios</a>
-                <a href="#contact">Contacto</a>
+                <a href="./home.php">Inicio</a>
+                <a href="./compras.php">Compras</a>
+                <a href="./menu.php">Menu</a>
+                <a href="./receta.php">Receta</a>
             </div>
 
         <script>
