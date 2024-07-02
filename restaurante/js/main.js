@@ -48,5 +48,5 @@ function compras() {
 
     const resultado = Number(compra_lunes) + Number(compra_martes) + Number(compra_miercoles) + Number(compra_jueves) + Number(compra_viernes)
 
-    document.querySelector(".print-cost").innerHTML = `EL COSTE TOTAL ES: ${resultado}`;
+    document.querySelector(".print-cost").innerHTML = `EL COSTE TOTAL ES: ${resultado}€`;
 }
