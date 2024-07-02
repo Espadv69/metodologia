@@ -17,6 +17,7 @@
                 <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
                 <a href="./home.php">Inicio</a>
                 <a href="./compras.php">Compras</a>
+                <a href="./requisiciones.php">Requisiciones</a>
                 <a href="./menu.php">Menu</a>
                 <a href="./receta.php">Receta</a>
             </div>
