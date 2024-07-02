@@ -15,15 +15,16 @@
             <h3>Productos perecederos</h3>
         </div>
 
-        <form action="" class="form-requi">
-            <input type="text" name="" placeholder="Pollo" required>
-            <input type="text" name="" placeholder="Pollo" required>
-            <input type="text" name="" placeholder="Pollo" required>
-            <input type="text" name="" placeholder="Pollo" required>
-            <input type="text" name="" placeholder="Pollo" required>
-            <input type="text" name="" placeholder="Pollo" required>
-            <input type="text" name="" placeholder="Pollo" required>
-            <input type="text" name="" placeholder="Pollo" required>
+        <p class="p-requi">¿Cuántos Kg se caducarón?</p>
+        <form action="../php-backend/requisiciones-backend.php" method="post" class="form-requi">
+            <input type="number" name="pollo" placeholder="Pollo" required>
+            <input type="number" name="cerdo" placeholder="Cerdo" required>
+            <input type="number" name="vacuno" placeholder="Vacuno" required>
+            <input type="number" name="pato" placeholder="Pato" required>
+            <input type="number" name="atun" placeholder="Atún" required>
+            <input type="number" name="merluza" placeholder="Merluza" required>
+            <input type="number" name="gambones" placeholder="Gambones" required>
+            <input type="number" name="acelgas" placeholder="Acelgas" required>
 
             <div>
                 <button class="btn">Enviar</button>
