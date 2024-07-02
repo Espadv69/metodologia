@@ -40,3 +40,4 @@ if(mysqli_num_rows($check_user) > 0) {
 }
 
 $insert = mysqli_query($conn, $sql);
+header("location: ../index.php");
