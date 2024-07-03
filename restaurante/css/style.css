@@ -145,6 +145,38 @@ h2 {
 }
 /***********/
 
+/* HOME */
+.h1-home {
+    text-align: center;
+    letter-spacing: 10px;
+    color: #DCA47C;
+    text-shadow: 0px 2px 3px #776B5D;
+}
+.home-img {
+    padding: 1rem;
+    margin: auto;
+    width: 100%;
+    max-width: 1000px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    gap: .5rem;
+
+    img {
+        padding: .5rem;
+        max-width: 220px;
+        background-color: #B0A695;
+        border-radius: .5rem;
+    }
+
+    p {
+        text-align: center;
+        font-size: 10px;
+        font-weight: bold;
+    }
+}
+/********/
+
 /* COMPRAS */
 .table-compras {
     margin: auto;
