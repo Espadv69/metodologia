@@ -11,11 +11,52 @@
         <!-- HEADER -->
         <?php require_once "../layout/header.php"; ?>
 
+        <!-- TEXT -->
+        <h1 class="h1-home">NUESTRO RESTAURANTE</h1>
+
         <!-- IMAGES FOR PICTURES -->
         <picture class="home-img">
-            <img src="../img/plato1.jpg" alt="ES UN PLATO DE SALMÓN">
-            <img src="../img/plato2.jpg" alt="ES UN PLATO DE CARNE">
-            <img src="../img/plato3.jpg" alt="ES UN PLATO DE PIZZA CON CROQUETAS">
+            <!-- FIRST IMAGE -->
+            <div>
+                <img src="../img/plato1.jpg" alt="ES UN PLATO DE SALMÓN">
+                <p>Uno de nuestros platos!</p>
+            </div>
+
+            <!-- SECOND IMAGE -->
+            <div>
+                <img src="../img/plato2.jpg" alt="ES UN PLATO DE CARNE">
+                <p>Uno de nuestros platos!</p>
+            </div>
+
+            <!-- THIRD IMAGE -->
+            <div>
+                <img src="../img/plato3.jpg" alt="ES UN PLATO DE PIZZA CON CROQUETAS">
+                <p>Uno de nuestros platos!</p>
+            </div>
+
+            <!-- FOURTH IMAGE -->
+            <div>
+                <img src="../img/plato4.jpg" alt="ES UNA MESA CON INSTRUMENTOS DE COCINA">
+                <p>Uno de nuestros platos!</p>
+            </div>
+
+            <!-- FIFTH IMAGE -->
+            <div>
+                <img src="../img/plato5.jpg" alt="ES UN PLATO DE ARROZ BLANCO CON TERNERA Y AGUACATE">
+                <p>Uno de nuestros platos!</p>
+            </div>
+
+            <!-- SIXTH IMAGE -->
+            <div>
+                <img src="../img/plato6.jpg" alt="ES CALABAZA">
+                <p>Uno de nuestros platos!</p>
+            </div>
+
+            <!-- SEVENTH IMAGE -->
+            <div>
+                <img src="../img/plato7.jpg" alt="ES UN COSTILLAR">
+                <p>Uno de nuestros platos!</p>
+            </div>
         </picture>
 
     </body>
