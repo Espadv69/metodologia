@@ -10,12 +10,11 @@
     <!--- NAVBAR -->
         <div class="navbar">
         <span class="menu-icon" onclick="openNav()">&#9776;</span>
-        <a href="#home">Inicio</a>
+        <a href="./home.php">Inicio</a>
         </div>
 
             <div id="myOffcanvas" class="offcanvas">
                 <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
-                <a href="./home.php">Inicio</a>
                 <a href="./compras.php">Compras</a>
                 <a href="./requisiciones.php">Requisiciones</a>
                 <a href="./menu.php">Menu</a>
