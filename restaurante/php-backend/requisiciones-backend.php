@@ -24,6 +24,7 @@ $insert = mysqli_query($conn, "INSERT INTO caduca(pollo, cerdo, vacuno, pato, at
     '$acelgas'
 )");
 
+// ECHO MESSAGE
 echo "
 <script>
     alert('Se añadio a la base de datos con éxito');
