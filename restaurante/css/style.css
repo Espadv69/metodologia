@@ -239,6 +239,7 @@ h2 {
     }
 
     button {
+        cursor: pointer;
         letter-spacing: 10px;
         text-transform: uppercase;
         font-weight: bold;
