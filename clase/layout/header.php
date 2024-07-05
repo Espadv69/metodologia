@@ -6,41 +6,6 @@
         <title>NavBar</title>
         <link rel="stylesheet" href="../css/style.css">
         <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
-        <style>
-        /* Modal styles */
-        .modal {
-            display: none;
-            position: fixed;
-            z-index: 1;
-            left: 0;
-            top: 0;
-            width: 100%;
-            height: 100%;
-            overflow: auto;
-            background-color: rgb(0,0,0);
-            background-color: rgba(0,0,0,0.4);
-        }
-        .modal-content {
-            background-color: #fefefe;
-            margin: 15% auto;
-            padding: 20px;
-            border: 1px solid #888;
-            width: 80%;
-            max-width: 600px;
-        }
-        .close {
-            color: #aaa;
-            float: right;
-            font-size: 28px;
-            font-weight: bold;
-        }
-        .close:hover,
-        .close:focus {
-            color: black;
-            text-decoration: none;
-            cursor: pointer;
-        }
-    </style>
     </head>
     <body>
     <div class="navbar">   
@@ -76,7 +41,13 @@
         <div class="modal-content">
             <span class="close" onclick="closeModal('modal3')">&times;</span>
             <h2>Registro profesores</h2>
-            <p>Contenido del modal para registrar profesores.</p>
+            <ul>
+                <li>Prof. luis mariano - (Programacion java)</li>
+                <li>Prof. luis mariano - (Programacion java)</li>
+                <li>Prof. luis mariano - (Programacion java)</li>
+                <li>Prof. luis mariano - (Programacion java)</li>
+                <li>Prof. luis mariano - (Programacion java)</li>
+            </ul>
         </div>
     </div>
 
