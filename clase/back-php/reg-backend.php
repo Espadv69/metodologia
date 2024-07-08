@@ -28,6 +28,18 @@ if(mysqli_num_rows($check_user) > 0) {
     exit;
 }
 
+// CHECK EMAIL
+$check_email = mysqli_query($conn, "SELECT * FROM sesion WHERE email='$email'");
+
+if(mysqli_num_rows($check_email) > 0) {
+    echo "
+    <script>
+        alert('Email existente❗');
+        window.location = '../php/reg.php';
+    </script>";
+    exit;
+}
+
 // INSERT INTO TABLE
 $insert = mysqli_query($conn, $sql);
 
