@@ -16,5 +16,7 @@ $sql = ("INSERT INTO sesion(nombre, usuario, email, pass) VALUES (
     '$pass'
 )");
 
+// INSERT INTO TABLE
+$insert = mysqli_query($conn, $sql);
 
 
