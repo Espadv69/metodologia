@@ -13,6 +13,7 @@
             <input type="email" name="email" placeholder="nombre@ejemplo.com" required>
             <input type="password" name="pass" placeholder="Ingrese una contraseña" required>
             <button>REGISTRAR</button>
+            <p>Si ya tienes cuenta <a href="../index.php">pinche aquí</a> ⬅️</p>
         </form>
     </body>
 </html>
