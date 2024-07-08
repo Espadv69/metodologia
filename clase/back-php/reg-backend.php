@@ -43,4 +43,10 @@ if(mysqli_num_rows($check_email) > 0) {
 // INSERT INTO TABLE
 $insert = mysqli_query($conn, $sql);
 
-
+if($insert) {
+    echo "
+    <script>
+        alert('Registrado con exito, inicie sesion✔️');
+        window.location = '../index.php';
+    </script>";
+}
