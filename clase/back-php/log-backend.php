@@ -10,7 +10,7 @@ $pass = $_POST["pass"];
 $begin = mysqli_query($conn, "SELECT * FROM sesion WHERE email='$email' AND pass='$pass'");
 
 if(mysqli_num_rows($begin) > 0) {
-    header("location: ../php/inscripcion.php");
+    header("location: ../php/home.php");
     exit;
 } else {
     echo "
