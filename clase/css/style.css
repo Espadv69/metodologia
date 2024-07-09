@@ -355,8 +355,9 @@ h4 {
     text-shadow: 0px 3px 3px royalblue;
 }
 .table-notas {
+    margin: auto;
     margin-top: 10vh;
-    width: 100%;
+    width: 90%;
     border-collapse: collapse;
     overflow-x: scroll;
 
