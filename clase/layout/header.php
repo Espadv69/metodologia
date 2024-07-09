@@ -15,7 +15,7 @@
                 <a href="./inscripcion.php"><i class="bi bi-person-fill-add"></i> Registro estudiantes</a>
                 <a onclick="openModal('modal2')"><i class="bi bi-person-vcard-fill"></i> Consultar estudiantes</a>
                 <a onclick="openModal('modal3')"><i class="bi bi-person-fill-add"></i> Registro profesores</a>
-                <a onclick="openModal('modal4')"><i class="bi bi-card-checklist"></i> Registro de notas</a>
+                <a href="./reg-notas.php"><i class="bi bi-card-checklist"></i> Registro de notas</a>
             </div>
         </div>
         <a href="./home.php" class="a btn"><i class="bi bi-house-door-fill"></i> INICIO</a>
