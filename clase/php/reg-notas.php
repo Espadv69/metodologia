@@ -13,6 +13,18 @@
         <table class="table-notas">
             <thead>
                 <tr>
+                    <th>Notas</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td class="tres_notas"></td>
+                </tr>
+            </tbody>
+        </table>
+        <table class="table-notas">
+            <thead>
+                <tr>
                     <th>Módulos</th>
                     <th>Horas Módulos</th>
                     <th>Notas Final</th>
