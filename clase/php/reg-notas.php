@@ -8,6 +8,7 @@
     </head>
     <body>
         <?php require_once "../layout/header.php" ?>
+
         <h4>Tabla estudiante</h4>
         <table class="table-notas">
             <thead>
@@ -25,19 +26,20 @@
                 </tr>
             </tbody>
         </table>
+
         <div class="btn-notas">
             <button onclick="media()">Add</button>
             <button onclick="reset()">Reset</button>
         </div>
 
-        <form action="" class="form-reg-notas">
+        <form action="../back-php/reg-notas-backend.php" method="post" class="form-reg-notas">
             <input type="text" placeholder="Ingrese alumno" required>
             <input type="text" placeholder="Ingrese identificación" required>
             <label for="select">Calificación</label>
             <select name="" id="select" required>
-                <option value="" disabled selected>Opciones</option>
-                <option value="">Apto ✔️</option>
-                <option value="">No apto ❌</option>
+                <option disabled selected>Opciones</option>
+                <option value="Apto">Apto ✔️</option>
+                <option value="No_Apto">No apto ❌</option>
             </select>
             <div class="btn-notas2">
                 <button>Enviar</button>
