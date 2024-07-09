@@ -9,11 +9,18 @@
     </head>
     <body>
         
-    <div class="footer-lay">
-        <footer>
-            esto es el footer
+        <footer class="footer-lay">
+            <div>
+            <!-- logo -->
+             <img src="../img/logo-escuela.jpg" alt="ES UN LOGO DE LA ESCUELA CON EL NOMBRE DE AITOR" width="100%">
+            </div>
+            <div class="footer-items">
+                <a href="item">Item</a>
+                <a href="item">Item</a>
+                <a href="item">Item</a>
+                <a href="item">Item</a>
+            </div>
         </footer>
-    </div>
 
     </body>
 </html>
