@@ -31,10 +31,10 @@
         </div>
 
         <form action="" class="form-reg-notas">
-            <input type="text" placeholder="Ingrese alumno">
-            <input type="text" placeholder="Ingrese identificación">
+            <input type="text" placeholder="Ingrese alumno" required>
+            <input type="text" placeholder="Ingrese identificación" required>
             <label for="select">Calificación</label>
-            <select name="" id="select">
+            <select name="" id="select" required>
                 <option value="" disabled selected>Opciones</option>
                 <option value="">Apto ✔️</option>
                 <option value="">No apto ❌</option>
