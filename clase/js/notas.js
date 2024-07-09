@@ -10,6 +10,8 @@ function media() {
         if(!(nota1 > 10) && !(nota2 > 10) && !(nota3 > 10)) {
             const total = (nota1 + nota2 + nota3)/3;
 
+            document.querySelector(".tres_notas").innerHTML = `Primera nota (<span class="name">${nota1}</span>) Segunda nota (<span class="name">${nota2}</span>) Tercera nota (<span class="name">${nota3}</span>)`;
+
             document.querySelector(".modulo").innerHTML = modulo;
 
             document.querySelector(".hora_modulo").innerHTML = `${hora_modulo} Horas`;
