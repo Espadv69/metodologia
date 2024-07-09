@@ -44,11 +44,11 @@
                 <div class="radio-ins">
                     <h3>Horario de estudio</h3>
                     <label>Mañana</label>
-                    <input type="radio" name="" id="">
+                    <input type="radio" name="">
                     <label>Tarde</label>
-                    <input type="radio" name="" id="">
+                    <input type="radio" name="">
                     <label>Noche</label>
-                    <input type="radio" name="" id="">
+                    <input type="radio" name="">
                 </div>
                 <section>
                     <button class="button"><i class="bi bi-send-fill"></i> Enviar</button>
