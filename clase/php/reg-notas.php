@@ -8,6 +8,7 @@
     </head>
     <body>
         <?php require_once "../layout/header.php" ?>
+        <h4>Tabla estudiante</h4>
         <table class="table-notas">
             <thead>
                 <tr>
@@ -18,14 +19,9 @@
             </thead>
             <tbody>
                 <tr>
-                    <td>item1</td>
-                    <td>item2</td>
-                    <td>item3</td>
-                </tr>
-                <tr>
-                    <td>item1</td>
-                    <td>item2</td>
-                    <td>item3</td>
+                    <td class="modulo"></td>
+                    <td class="hora_modulo"></td>
+                    <td class="nota"></td>
                 </tr>
             </tbody>
         </table>
@@ -33,6 +29,21 @@
             <button onclick="media()">Add</button>
             <button onclick="reset()">Reset</button>
         </div>
+
+        <form action="" class="form-reg-notas">
+            <input type="text" placeholder="Ingrese alumno">
+            <input type="text" placeholder="Ingrese identificación">
+            <label for="select">Calificación</label>
+            <select name="" id="select">
+                <option value="" disabled selected>Opciones</option>
+                <option value="">Apto ✔️</option>
+                <option value="">No apto ❌</option>
+            </select>
+            <div class="btn-notas2">
+                <button>Enviar</button>
+                <button type="reset">Borrar</button>
+            </div>
+        </form>
         <?php require_once "../layout/footer.php" ?>
         <script src="../js/notas.js"></script>
     </body>
