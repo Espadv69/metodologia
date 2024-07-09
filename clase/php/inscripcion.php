@@ -51,8 +51,8 @@
                     <input type="radio" name="" id="">
                 </div>
                 <section>
-                    <button class="button">Enviar</button>
-                    <button class="reset" type="reset">Borrar</button>
+                    <button class="button"><i class="bi bi-send-fill"></i> Enviar</button>
+                    <button class="reset" type="reset"><i class="bi bi-trash-fill"></i> Borrar</button>
                 </section>
             </form>
 
