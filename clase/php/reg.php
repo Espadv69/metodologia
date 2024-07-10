@@ -7,6 +7,7 @@
         <link rel="stylesheet" href="../css/style.css">
     </head>
     <body>
+        <!-- Form register -->
         <form action="../back-php/reg-backend.php" method="post" class="log-reg-form">
             <input type="text" name="nombre" placeholder="Ingrese su nombre" required>
             <input type="text" name="usuario" placeholder="Ingrese su nombre de usuario" required>
