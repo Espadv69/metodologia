@@ -44,7 +44,7 @@
         <!-- Buttons for table -->
         <div class="btn-notas">
             <button onclick="media()">Add</button>
-            <button onclick="reset()">Reset</button>
+            <button onclick="reiniciar()">Reset</button>
         </div>
 
         <form action="../back-php/reg-notas-backend.php" method="post" class="form-reg-notas">
