@@ -13,3 +13,6 @@ $sql = "INSERT INTO notas(nombre, id, apto) VALUES (
     '$id',
     '$apto'
 )";
+
+// INSERT INTO
+$insert = mysqli_query($conn, $sql);
