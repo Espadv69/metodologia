@@ -45,10 +45,10 @@
         </div>
 
         <form action="../back-php/reg-notas-backend.php" method="post" class="form-reg-notas">
-            <input type="text" placeholder="Ingrese alumno" required>
-            <input type="text" placeholder="Ingrese identificación" required>
+            <input type="text" name="nombre" placeholder="Ingrese alumno" required>
+            <input type="text" name="id" placeholder="Ingrese identificación" required>
             <label for="select">Calificación</label>
-            <select name="" id="select" required>
+            <select name="apto" id="select" required>
                 <option disabled selected>Opciones</option>
                 <option value="Apto">Apto ✔️</option>
                 <option value="No_Apto">No apto ❌</option>
