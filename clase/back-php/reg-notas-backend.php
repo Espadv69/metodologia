@@ -27,3 +27,11 @@ if(mysqli_num_rows($check_id) > 0) {
 
 // INSERT INTO
 $insert = mysqli_query($conn, $sql);
+
+if($insert) {
+    echo "
+    <script>
+        alert('Alumno registrado con éxito ✔️');
+        window.location = '../php/reg-notas.php';
+    </script>";
+}
