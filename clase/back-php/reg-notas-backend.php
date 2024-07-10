@@ -6,3 +6,10 @@ require_once "./conn.php";
 $nombre = $_POST["nombre"];
 $id = $_POST["id"];
 $apto = $_POST["apto"];
+
+// SQL
+$sql = "INSERT INTO notas(nombre, id, apto) VALUES (
+    '$nombre',
+    '$id',
+    '$apto'
+)";
