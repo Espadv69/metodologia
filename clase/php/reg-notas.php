@@ -10,6 +10,8 @@
         <?php require_once "../layout/header.php" ?>
 
         <h4>Tabla estudiante</h4>
+
+        <!-- Table -->
         <table class="table-notas">
             <thead>
                 <tr>
@@ -39,20 +41,26 @@
             </tbody>
         </table>
 
+        <!-- Buttons for table -->
         <div class="btn-notas">
             <button onclick="media()">Add</button>
             <button onclick="reset()">Reset</button>
         </div>
 
         <form action="../back-php/reg-notas-backend.php" method="post" class="form-reg-notas">
+            <!-- Inputs -->
             <input type="text" name="nombre" placeholder="Ingrese alumno" required>
             <input type="text" name="id" placeholder="Ingrese identificación" required>
+
+            <!-- Select -->
             <label for="select">Calificación</label>
             <select name="apto" id="select" required>
                 <option disabled selected>Opciones</option>
                 <option value="Apto">Apto ✔️</option>
-                <option value="No_Apto">No apto ❌</option>
+                <option value="No Apto">No apto ❌</option>
             </select>
+
+            <!-- Buttons -->
             <div class="btn-notas2">
                 <button>Enviar</button>
                 <button type="reset">Borrar</button>
