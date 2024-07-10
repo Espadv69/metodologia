@@ -13,6 +13,8 @@
 
             <form action="" method="post" class="form-ins">
                 <h2>Nuevas inscripciones</h2>
+
+                <!-- Inputs -->
                 <div>
                     <label>Nombre</label>
                     <input type="text">
@@ -33,6 +35,8 @@
                     <label>Email</label>
                     <input type="email">
                 </div>
+
+                <!-- Select -->
                 <div class="select-container">
                     <label for="mySelect">Selecciona una opción:</label>
                     <select id="mySelect">
@@ -41,6 +45,8 @@
                         <option value="opcion3">Opción 3</option>
                     </select>
                 </div>
+
+                <!-- Inputs type radio -->
                 <div class="radio-ins">
                     <h3>Horario de estudio</h3>
                     <label>Mañana</label>
@@ -50,6 +56,8 @@
                     <label>Noche</label>
                     <input type="radio" name="">
                 </div>
+
+                <!-- Buttons -->
                 <section>
                     <button class="button"><i class="bi bi-send-fill"></i> Enviar</button>
                     <button class="reset" type="reset"><i class="bi bi-trash-fill"></i> Borrar</button>
