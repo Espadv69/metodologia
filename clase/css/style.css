@@ -145,9 +145,22 @@ body {
     backdrop-filter: blur(2px);
     color: black;
     display: grid;
-    grid-template-columns: 100px 1fr;
+    grid-template-columns: 100px 1fr 1fr;
+    grid-template-areas: 
+    "img h4 h4"
+    "img item item";
+
+    div:first-child {
+        grid-area: img;
+    }
+
+    h4 {
+        grid-area: h4;
+        text-align: center;
+    }
 
     .footer-items {
+        grid-area: item;
         display: flex;
         flex-wrap: wrap;
         justify-content: space-evenly;
@@ -156,13 +169,15 @@ body {
         a {
             text-decoration: none;
             color: whitesmoke;
-            padding: .5rem;
+            border: 2px solid whitesmoke;
+            padding: .5rem 1rem;
             text-transform: uppercase;
             transition: all 300ms ease;
         }
 
         a:hover {
             color: #0F67B1;
+            border: 2px solid #0F67B1;
         }
     }
 }
