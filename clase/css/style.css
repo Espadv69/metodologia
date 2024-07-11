@@ -16,6 +16,16 @@ body {
 .main-layout {
     margin-top: 3rem;
 }
+
+h4 {
+    margin-top: 2vh;
+    text-align: center;
+    font-size: 27px;
+    text-transform: uppercase;
+    letter-spacing: 10px;
+    color: lightblue;
+    text-shadow: 0px 3px 3px royalblue;
+}
 /*******/
 
 /* NAV BAR */
@@ -360,15 +370,6 @@ section {
 /***************/
 
 /* REG NOTAS */
-h4 {
-    margin-top: 3vh;
-    text-align: center;
-    font-size: 27px;
-    text-transform: uppercase;
-    letter-spacing: 10px;
-    color: lightblue;
-    text-shadow: 0px 3px 3px royalblue;
-}
 .table-notas {
     margin: auto;
     margin-top: 10vh;
