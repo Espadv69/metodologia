@@ -43,16 +43,26 @@
                 cursor: pointer;
             }
 
+            .btns {
+                display: flex;
+                justify-content: space-between;
+            }
+
             .btn-print-send {
                 cursor: pointer;
                 margin-top: 1vh;
                 font-weight: bold;
                 text-transform: uppercase;
-                border: 2px solid black;
+                border: 2px solid gray;
                 outline: none;
                 background: transparent;
                 padding: .5rem;
                 border-radius: .5rem;
+            }
+
+            .green {
+                border: 2px solid lightgreen;
+                color: green;
             }
         </style>
     </head>
@@ -74,7 +84,7 @@
                     Instructor: Juan Pérez<br>
                     Descripción: Curso introductorio a HTML para principiantes.<br>
                     <div class='btns'>
-                        <button onclick='buy()' class='btn-print-send' >Comprar</button>
+                        <button onclick='buy()' class='btn-print-send green' >Comprar</button>
                     <button onclick='print()' class='btn-print-send' >Imprimir</button>
                     </div>
                 "><i class="bi bi-filetype-html"></i> HTML</a>
@@ -87,7 +97,7 @@
                     Instructor: María García<br>
                     Descripción: Curso avanzado de CSS para desarrolladores.<br>
                     <div class='btns'>
-                        <button onclick='buy()' class='btn-print-send' >Comprar</button>
+                        <button onclick='buy()' class='btn-print-send green' >Comprar</button>
                     <button onclick='print()' class='btn-print-send' >Imprimir</button>
                     </div>
                 "><i class="bi bi-filetype-css"></i> CSS</a>
@@ -100,7 +110,7 @@
                     Instructor: Carlos López<br>
                     Descripción: Curso completo de JavaScript, desde básico hasta avanzado.<br>
                     <div class='btns'>
-                        <button onclick='buy()' class='btn-print-send' >Comprar</button>
+                        <button onclick='buy()' class='btn-print-send green' >Comprar</button>
                     <button onclick='print()' class='btn-print-send' >Imprimir</button>
                     </div>
                 "><i class="bi bi-filetype-js"></i> JS</a>
@@ -113,7 +123,7 @@
                     Instructor: Ana Martínez<br>
                     Descripción: Curso de PHP para desarrollo web.<br>
                     <div class='btns'>
-                        <button onclick='buy()' class='btn-print-send' >Comprar</button>
+                        <button onclick='buy()' class='btn-print-send green' >Comprar</button>
                     <button onclick='print()' class='btn-print-send' >Imprimir</button>
                     </div>
                 "><i class="bi bi-filetype-php"></i> PHP</a>
