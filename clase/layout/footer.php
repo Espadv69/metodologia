@@ -43,7 +43,7 @@
                 cursor: pointer;
             }
 
-            .btn-print {
+            .btn-print-send {
                 cursor: pointer;
                 margin-top: 1vh;
                 font-weight: bold;
@@ -73,7 +73,10 @@
                     Duración: 4 semanas<br>
                     Instructor: Juan Pérez<br>
                     Descripción: Curso introductorio a HTML para principiantes.<br>
-                    <button onclick='print()' class='btn-print' >Imprimir</button>
+                    <div class='btns'>
+                        <button onclick='buy()' class='btn-print-send' >Comprar</button>
+                    <button onclick='print()' class='btn-print-send' >Imprimir</button>
+                    </div>
                 "><i class="bi bi-filetype-html"></i> HTML</a>
                 <a href="#" class="course-link" data-course="CSS" data-invoice="
                     <strong>Factura del curso de CSS</strong><br>
@@ -83,7 +86,10 @@
                     Duración: 6 semanas<br>
                     Instructor: María García<br>
                     Descripción: Curso avanzado de CSS para desarrolladores.<br>
-                    <button onclick='print()' class='btn-print' >Imprimir</button>
+                    <div class='btns'>
+                        <button onclick='buy()' class='btn-print-send' >Comprar</button>
+                    <button onclick='print()' class='btn-print-send' >Imprimir</button>
+                    </div>
                 "><i class="bi bi-filetype-css"></i> CSS</a>
                 <a href="#" class="course-link" data-course="JS" data-invoice="
                     <strong>Factura del curso de JavaScript</strong><br>
@@ -93,7 +99,10 @@
                     Duración: 8 semanas<br>
                     Instructor: Carlos López<br>
                     Descripción: Curso completo de JavaScript, desde básico hasta avanzado.<br>
-                    <button onclick='print()' class='btn-print' >Imprimir</button>
+                    <div class='btns'>
+                        <button onclick='buy()' class='btn-print-send' >Comprar</button>
+                    <button onclick='print()' class='btn-print-send' >Imprimir</button>
+                    </div>
                 "><i class="bi bi-filetype-js"></i> JS</a>
                 <a href="#" class="course-link" data-course="PHP" data-invoice="
                     <strong>Factura del curso de PHP</strong><br>
@@ -103,7 +112,10 @@
                     Duración: 6 semanas<br>
                     Instructor: Ana Martínez<br>
                     Descripción: Curso de PHP para desarrollo web.<br>
-                    <button onclick='print()' class='btn-print' >Imprimir</button>
+                    <div class='btns'>
+                        <button onclick='buy()' class='btn-print-send' >Comprar</button>
+                    <button onclick='print()' class='btn-print-send' >Imprimir</button>
+                    </div>
                 "><i class="bi bi-filetype-php"></i> PHP</a>
             </div>
         </footer>
@@ -113,7 +125,7 @@
             <div class="modal-content">
                 <span class="close">&times;</span>
                 <h2>Factura</h2>
-                <p id="invoiceContent">Aquí va el contenido de la factura</p>
+                <p id="invoiceContent"></p>
             </div>
         </div>
 
