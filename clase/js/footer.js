@@ -37,3 +37,8 @@ document.addEventListener('DOMContentLoaded', function() {
         }
     });
 });
+
+// Function to move the file
+function buy() {
+    window.location = './cursos.php';
+}
