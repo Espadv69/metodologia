@@ -1,13 +1,13 @@
 document.addEventListener('DOMContentLoaded', function() {
     // Get the modal
-    var modal = document.getElementById("invoiceModal");
+    let modal = document.getElementById("invoiceModal");
 
     // Get the <span> element that closes the modal
-    var span = modal.querySelector(".close");
+    let span = modal.querySelector(".close");
 
     // Function to open the modal
     function openModal(content) {
-        document.getElementById('invoiceContent').innerText = content;
+        document.getElementById('invoiceContent').innerHTML = content;
         modal.style.display = "block";
     }
 
@@ -20,8 +20,8 @@ document.addEventListener('DOMContentLoaded', function() {
     document.querySelectorAll('.course-link').forEach(function(link) {
         link.addEventListener('click', function(event) {
             event.preventDefault();
-            var course = this.getAttribute('data-course');
-            openModal('Factura del curso de ' + course);
+            let invoiceContent = this.getAttribute('data-invoice');
+            openModal(invoiceContent);
         });
     });
 
