@@ -14,11 +14,12 @@
             <!-- logo -->
              <img src="../img/logo-escuela.jpg" alt="ES UN LOGO DE LA ESCUELA CON EL NOMBRE DE AITOR" width="100%">
             </div>
+            <h4>Nuestros cursos</h4>
             <div class="footer-items">
-                <a href="item">Item</a>
-                <a href="item">Item</a>
-                <a href="item">Item</a>
-                <a href="item">Item</a>
+                <a href="item"><i class="bi bi-filetype-html"></i> HTML</a>
+                <a href="item"><i class="bi bi-filetype-css"></i> CSS</a>
+                <a href="item"><i class="bi bi-filetype-js"></i> JS</a>
+                <a href="item"><i class="bi bi-filetype-php"></i> PHP</a>
             </div>
         </footer>
 
