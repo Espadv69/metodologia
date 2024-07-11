@@ -20,6 +20,7 @@
                 background-color: rgba(0,0,0,0.4);
                 padding-top: 60px;
             }
+
             .modal-content {
                 background-color: #fefefe;
                 margin: 5% auto;
@@ -27,17 +28,31 @@
                 border: 1px solid #888;
                 width: 80%;
             }
+
             .close {
                 color: #aaa;
                 float: right;
                 font-size: 28px;
                 font-weight: bold;
             }
+
             .close:hover,
             .close:focus {
                 color: black;
                 text-decoration: none;
                 cursor: pointer;
+            }
+
+            .btn-print {
+                cursor: pointer;
+                margin-top: 1vh;
+                font-weight: bold;
+                text-transform: uppercase;
+                border: 2px solid black;
+                outline: none;
+                background: transparent;
+                padding: .5rem;
+                border-radius: .5rem;
             }
         </style>
     </head>
@@ -50,10 +65,46 @@
             </div>
             <h4>Nuestros cursos</h4>
             <div class="footer-items">
-                <a class="course-link" data-course="HTML"><i class="bi bi-filetype-html"></i> HTML</a>
-                <a class="course-link" data-course="CSS"><i class="bi bi-filetype-css"></i> CSS</a>
-                <a class="course-link" data-course="JS"><i class="bi bi-filetype-js"></i> JS</a>
-                <a class="course-link" data-course="PHP"><i class="bi bi-filetype-php"></i> PHP</a>
+                <a href="#" class="course-link" data-course="HTML" data-invoice="
+                    <strong>Factura del curso de HTML</strong><br>
+                    Nombre del curso: HTML Básico<br>
+                    Precio: $50<br>
+                    Fecha: 11/07/2024<br>
+                    Duración: 4 semanas<br>
+                    Instructor: Juan Pérez<br>
+                    Descripción: Curso introductorio a HTML para principiantes.<br>
+                    <button onclick='print()' class='btn-print' >Imprimir</button>
+                "><i class="bi bi-filetype-html"></i> HTML</a>
+                <a href="#" class="course-link" data-course="CSS" data-invoice="
+                    <strong>Factura del curso de CSS</strong><br>
+                    Nombre del curso: CSS Avanzado<br>
+                    Precio: $75<br>
+                    Fecha: 11/07/2024<br>
+                    Duración: 6 semanas<br>
+                    Instructor: María García<br>
+                    Descripción: Curso avanzado de CSS para desarrolladores.<br>
+                    <button onclick='print()' class='btn-print' >Imprimir</button>
+                "><i class="bi bi-filetype-css"></i> CSS</a>
+                <a href="#" class="course-link" data-course="JS" data-invoice="
+                    <strong>Factura del curso de JavaScript</strong><br>
+                    Nombre del curso: JavaScript Completo<br>
+                    Precio: $100<br>
+                    Fecha: 11/07/2024<br>
+                    Duración: 8 semanas<br>
+                    Instructor: Carlos López<br>
+                    Descripción: Curso completo de JavaScript, desde básico hasta avanzado.<br>
+                    <button onclick='print()' class='btn-print' >Imprimir</button>
+                "><i class="bi bi-filetype-js"></i> JS</a>
+                <a href="#" class="course-link" data-course="PHP" data-invoice="
+                    <strong>Factura del curso de PHP</strong><br>
+                    Nombre del curso: PHP para Web<br>
+                    Precio: $90<br>
+                    Fecha: 11/07/2024<br>
+                    Duración: 6 semanas<br>
+                    Instructor: Ana Martínez<br>
+                    Descripción: Curso de PHP para desarrollo web.<br>
+                    <button onclick='print()' class='btn-print' >Imprimir</button>
+                "><i class="bi bi-filetype-php"></i> PHP</a>
             </div>
         </footer>
 
