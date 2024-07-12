@@ -51,6 +51,6 @@
 
     <?php
     // BUTTON 
-    echo "<a href='../php/home.php' class='volver'>Volver</a><br><br>";
+    echo "<a href='../php/reg-notas.php' class='volver'>Volver</a><br><br>";
     ?>
 </body>
