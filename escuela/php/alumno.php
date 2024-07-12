@@ -15,7 +15,7 @@
         <div class="div-alert">
             <?php 
                 echo "Has recibido un mensaje del profesor: <br>";
-                echo "<span class='span-comentario'><span style='color: red'>Identificación: </span>" . $_REQUEST["id"] . "<br><span style='color: red'>Mensage: </span>" . $_REQUEST["texto"] . "</span>";
+                echo "<span class='span-comentario'><span style='color: red'>Identificación: </span>" . $_REQUEST["id"] . "<br><span style='color: red'>Mensaje: </span>" . $_REQUEST["texto"] . "</span>";
             ?>
             <span class="cerrar" onclick="cerrarAlerta()">X</span>
         </div>
