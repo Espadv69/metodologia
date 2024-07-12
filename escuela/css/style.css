@@ -1,0 +1,693 @@
+/* FONT FAMILY */
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+/* ALL */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Fira Code", system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+body {
+    min-height: 100vh;
+}
+
+.main-layout {
+    margin-top: 3rem;
+}
+
+h4 {
+    margin-top: 2vh;
+    text-align: center;
+    font-size: 27px;
+    text-transform: uppercase;
+    letter-spacing: 10px;
+    color: lightblue;
+    text-shadow: 0px 3px 3px royalblue;
+}
+/*******/
+
+/* HOME */
+.img-head {
+    padding: .5rem 2rem;
+    display: flex;
+    justify-content: center;
+    background-color: #0F67B1;
+
+    img {
+        max-width: 400px;
+    }
+}
+
+.flex-home {
+    margin: auto;
+    width: 100%;
+    max-width: 600px;
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    gap: 2rem;
+
+    img {
+        width: 250px;
+    }
+}
+/********/
+
+/* NAV BAR */
+.navbar {
+    width: 100%;
+    padding: 1rem;
+    display: flex;
+    justify-content: space-between;
+    background-color: #96C9F4;
+
+    .a {
+        text-decoration: none;
+        color: whitesmoke;
+        padding: 1rem;
+        transition: all 300ms ease;
+    }
+
+    .a:hover {
+        color: #0F67B1;
+    }
+
+    .dropdown {
+    position: relative;
+    display: inline-block;
+
+        button {
+            font-family: "Roboto", "Fira Code", sans-serif;
+            font-weight: bold;
+            text-transform: uppercase;
+            letter-spacing: 10px;
+            position: relative;
+            cursor: pointer;
+            color: whitesmoke;
+            background: transparent;
+            padding: 1rem;
+            border: 2px solid whitesmoke;
+            border-radius: .3rem;
+            z-index: 1;
+            overflow: hidden;
+        }
+
+        .btn::before {
+            content: "";
+            position: absolute;
+            z-index: -1;
+            width: 100%;
+            height: 200%;
+            left: 0;
+            top: -200%;
+            border-radius: 100%;
+            background-color: #0F67B1;
+            transition: all 600ms ease;
+        }
+
+        .btn:hover::before {
+            top: 0;
+            border-radius: 0;
+        }
+
+        .dropdown-content {
+            display: none;
+            position: absolute;
+            background-color: #0F67B1;
+            min-width: 200px;
+            box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+            z-index: 2;
+        }
+        .dropdown-content a {
+            color: white;
+            padding: 12px 16px;
+            text-decoration: none;
+            display: block;
+            transition: all 300ms ease;
+        }
+        .dropdown-content a:hover {
+            background-color: #96C9F4;
+            color: whitesmoke;
+        }
+        .show {
+            display: block;
+        }
+    }
+}
+.modal {
+    display: none;
+    position: fixed;
+    z-index: 2;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgb(0,0,0);
+    background-color: rgba(0,0,0,0.4);
+}
+.modal-content {
+    background-color: #fefefe;
+    margin: 15% auto;
+    padding: 2rem;
+    border: 1px solid #888;
+    width: 80%;
+    max-width: 600px;
+
+    .close {
+        color: #aaa;
+        float: right;
+        font-size: 28px;
+        font-weight: bold;
+    }
+    
+    .close:hover,
+    .close:focus {
+        color: black;
+        text-decoration: none;
+        cursor: pointer;
+    }
+}
+
+.modal-consultar {
+    font-size: 22px;
+    line-height: 1.4;
+}
+/***********/
+
+/* FOOTER */
+.footer-lay {
+    width: 100%;
+    bottom: 0;
+    padding: 1rem;
+    background-color: #96C9F4;
+    backdrop-filter: blur(2px);
+    color: black;
+    display: grid;
+    grid-template-columns: 100px 1fr 1fr;
+    grid-template-areas: 
+    "img h4 h4"
+    "img item item";
+
+    div:first-child {
+        grid-area: img;
+    }
+
+    h4 {
+        grid-area: h4;
+        text-align: center;
+    }
+
+    .footer-items {
+        grid-area: item;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-evenly;
+        align-items: center;
+
+        a {
+            text-decoration: none;
+            color: whitesmoke;
+            border: 2px solid whitesmoke;
+            padding: .5rem 1rem;
+            text-transform: uppercase;
+            transition: all 300ms ease;
+        }
+
+        a:hover {
+            color: #0F67B1;
+            border: 2px solid #0F67B1;
+        }
+    }
+}
+
+.id {
+    width: 100%;
+    text-align: center;
+    font-weight: bold;
+    padding: 1rem;
+    border: none;
+    outline: none;
+    box-shadow: 0px 3px 1px gainsboro;
+}
+
+.consultar {
+    cursor: pointer;
+    margin-top: 4vh;
+    padding: 1rem;
+    outline: none;
+    background: transparent;
+    border: 2px solid lightblue;
+    color: lightseagreen;
+    transition: all 400ms ease;
+}
+
+.consultar:hover {
+    border-radius: 1rem;
+}
+/**********/
+
+/* FORM LOG & REG */
+.log-reg-form {
+    background-color: #0066ff50;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    min-height: 100dvh;
+    gap: 1rem;
+
+    input {
+        padding: 1rem;
+        border-radius: .3rem;
+        border: none;
+        outline: none;
+        box-shadow: 0px 4px 4px #4d7cfc60;
+    }
+
+    button {
+        text-transform: uppercase;
+        font-weight: bold;
+        cursor: pointer;
+        overflow: hidden;
+        position: relative;
+        padding: 1rem 1.5rem;
+        border: 2px solid #ffffff;
+        border-radius: .3rem;
+        background: transparent;
+        color: #ffffff;
+        z-index: 1;
+        letter-spacing: 5px;
+    }
+
+    button::before {
+        content: "";
+        position: absolute;
+        width: 100%;
+        height: 200%;
+        left: 0;
+        top: -200%;
+        border-radius: 100%;
+        background-color: #4d7cfc;
+        z-index: -1;
+        transition: all 400ms linear;
+    }
+
+    button:hover::before {
+        border-radius: 0;
+        top: 0;
+    }
+
+    p {
+        color: royalblue;
+
+        a {
+            text-decoration: none;
+            color: whitesmoke;
+        }
+    }
+}
+
+@media (max-width: 430px) {
+    .log-reg-form {
+        p {
+            font-size: 13px;
+        }
+    }
+}
+/******************/
+
+/* INSCRIPCION */
+.form-ins {
+    padding: 4rem 1rem;
+    font-family: "Roboto", sans-serif;
+    min-height: 100vh;
+    margin: auto;
+    width: 100%;
+    max-width: 800px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+    background-color: #0F67B130;
+
+    div {
+        display: flex;
+        flex-direction: column;
+        gap: .5rem;
+
+        label {
+            font-weight: bold;
+            text-align: center;
+        }
+
+        input {
+            padding: 1rem;
+            border: none;
+            border-radius: .3rem;
+            outline: none;
+            box-shadow: 0px 3px 2px#0F67B1;
+        }
+
+        input[type="radio"] {
+            box-shadow: none;
+        }
+
+        select {
+            padding: .5rem;
+            border: none;
+            outline: none;
+            box-shadow: 0px 3px 2px#0F67B1;
+        }
+
+        .radio-ins {
+            text-align: center;
+        }
+    }
+}
+
+section {
+    display: flex;
+    justify-content: space-between;
+    gap: .5rem;
+
+    .button,
+    .reset {
+        overflow: hidden;
+        position: relative;
+        cursor: pointer;
+        color: #0F67B1;
+        padding: 1rem;
+        outline: none;
+        border: none;
+        background: transparent;
+        border: 2px solid #0F67B1;
+        z-index: 1;
+        transition: all 400ms ease;
+    }
+
+    .button:hover {
+        color: whitesmoke;
+    }
+
+    .button::before {
+        content: "";
+        position: absolute;
+        width: 100%;
+        height: 200%;
+        border-radius: 100%;
+        left: 0;
+        top: -200%;
+        background-color: #0F67B1;
+        z-index: -1;
+        transition: all 400ms ease;
+        color: whitesmoke;
+    }
+
+    .button:hover::before {
+        top: 0;
+        border-radius: 0;
+    }
+
+    .reset {
+        border: 2px solid red;
+        color: red;
+    }
+
+    .reset:hover {
+        color: whitesmoke;
+        background-color: red;
+    }
+}
+/***************/
+
+/* REG NOTAS */
+.table-notas {
+    margin: auto;
+    margin-top: 10vh;
+    width: 90%;
+    border-collapse: collapse;
+    overflow-x: scroll;
+
+    th,
+    td {
+        text-transform: uppercase;
+        padding: 1rem;
+        border: 2px solid #0F67B1;
+        text-align: center;
+
+        .name {
+            color: #0F67B1;
+        }
+    }
+
+    th {
+        background-color: #96C9F4;
+    }
+}
+
+.btn-notas {
+    padding: 2rem;
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+
+    button {
+        cursor: pointer;
+        width: 100px;
+        font-family: "Roboto", sans-serif;
+        font-weight: bold;
+        letter-spacing: 5px;
+        text-transform: uppercase;
+        padding: .5rem 1rem;
+        color: #0F67B1;
+        background: transparent;
+        border: 2px solid #0F67B1;
+        transition: all 300ms ease;
+    }
+
+    button:nth-child(2) {
+        border: 2px solid red;
+        color: red;
+    }
+
+    button:hover {
+        scale: 1.1;
+    }
+}
+
+.form-reg-notas {
+    margin: auto;
+    margin-top: .5rem;
+    width: 100%;
+    max-width: 700px;
+    padding: 1rem;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    background-color: lightblue;
+    border-radius: .6rem;
+    margin-bottom: 20vh;
+
+    input {
+        padding: 1rem;
+        border: none;
+        border-radius: .4rem;
+        outline-color: #96C9F4;
+        box-shadow: 0px 1px 3px #80808080;
+    }
+
+    select {
+        padding: 1rem;
+        outline: none;
+        border: none;
+        border-radius: .4rem;
+        box-shadow: 0px 1px 3px #80808060;
+
+        option:nth-child(2) {
+            font-weight: bold;
+            color: green;
+        }
+
+        option:nth-child(3) {
+            font-weight: bold;
+            color: red;
+        }
+    }
+
+    .btn-notas2 {
+        display: flex;
+        justify-content: space-between;
+
+        button {
+            font-weight: bold;
+            position: relative;
+            cursor: pointer;
+            padding: .5rem 1rem;
+            border: none;
+            overflow: hidden;
+            z-index: 1;
+            transition: all 400ms ease;
+        }
+
+        button:hover {
+            color: white;
+        }
+
+        button::before {
+            content: "";
+            position: absolute;
+            width: 100%;
+            height: 200%;
+            left: 0;
+            top: 200%;
+            border-radius: 100%;
+            background-color: #0F67B1;
+            z-index: -1;
+            transition: all 300ms ease;
+        }
+
+        button:hover::before {
+            top: 0;
+            border-radius: 0;
+        }
+    }
+}
+/*************/
+
+/* CURSOS */
+.form-cursos {
+    margin-top: 10vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 1rem;
+
+    input {
+        color: white;
+        background: transparent;
+        padding: 1rem;
+        border: none;
+        border-radius: .5rem;
+        outline: none;
+        box-shadow: 0px 3px 6px #ffffff70;
+    }
+
+    input[type="date"] {
+        color: whitesmoke;
+    }
+
+    input::placeholder {
+        color: whitesmoke;
+    }
+
+    select {
+        background: transparent;
+        color: whitesmoke;
+        font-weight: bold;
+        border-radius: .4rem;
+        border: 2px solid #0F67B1;
+        padding: .3rem 1rem;
+
+        option {
+            font-weight: bold;
+            background-color: #000000;
+        }
+
+        option:nth-child(2) {
+            color: orangered;
+        }
+
+        option:nth-child(3) {
+            color: lightskyblue;
+        }
+
+        option:nth-child(4) {
+            color: yellow;
+        }
+
+        option:nth-child(5) {
+            color: royalblue;
+        }
+    }
+
+    label {
+        color: whitesmoke;
+    }
+}
+
+.form-cursos-cuenta {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 1rem;
+}
+
+.btn-cursos {
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+    flex-wrap: wrap;
+
+    button {
+        color: whitesmoke;
+        width: 120px;
+        padding: 1rem 0px;
+        font-family: "Roboto", sans-serif;
+        font-weight: bold;
+        background-color: #96C9F4;
+        border: none;
+        border-radius: .6rem;
+        box-shadow: none;
+        transition: all 300ms ease;
+    }
+
+    button:nth-child(2) {
+        background-color: red;
+        color: whitesmoke;
+    }
+
+    button:hover {
+        border: none;
+        box-shadow: 0px 2px 5px gray;
+    }
+} 
+/**********/
+
+/* ALUMNO */
+.div-alert {
+    color: whitesmoke;
+    top: 1rem;
+    position: relative;
+    width: 100%;
+    max-width: 600px;
+    margin: auto;
+    padding: 2rem;
+    background-color: rgb(255, 148, 148);
+    border-radius: .5rem;
+}
+
+.span-comentario {
+    font-size: 20px;
+    color: #ffffff;
+}
+
+.cerrar {
+    font-family: cursive;
+    position: absolute;
+    cursor: pointer;
+    padding: 1rem;
+    color: #ff0000;
+    font-size: 2rem;
+    right: -14px;
+    top: -24px;
+}
+
+.cerrar:hover {
+    color: whitesmoke;
+}
