@@ -27,7 +27,7 @@
             <span class="close" onclick="closeModal('modal2')">&times;</span>
             <h2>Consultar estudiantes</h2>
             <form action="../back-php/con-estudiantes-backend.php" method="post">
-                <input type="text" class="id" name="id" placeholder="Identificación del alumno">
+                <input type="text" class="id" name="id" placeholder="Identificación del alumno" required>
                 <button class="consultar">Consultar</button>
             </form>
         </div>
