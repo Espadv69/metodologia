@@ -513,15 +513,26 @@ section {
     gap: 1rem;
 
     input {
+        color: white;
+        background: transparent;
         padding: 1rem;
         border: none;
         border-radius: .5rem;
         outline: none;
-        box-shadow: 0px 4px 3px #80808060;
+        box-shadow: 0px 3px 6px #ffffff70;
+    }
+
+    input[type="date"] {
+        color: whitesmoke;
+    }
+
+    input::placeholder {
+        color: whitesmoke;
     }
 
     select {
-        color: currentColor;
+        background: transparent;
+        color: whitesmoke;
         font-weight: bold;
         border-radius: .4rem;
         border: 2px solid #0F67B1;
@@ -548,6 +559,17 @@ section {
             color: royalblue;
         }
     }
+
+    label {
+        color: whitesmoke;
+    }
+}
+
+.form-cursos-cuenta {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 1rem;
 }
 
 .btn-cursos {
