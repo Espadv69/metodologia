@@ -6,6 +6,16 @@
         <title>NavBar</title>
         <link rel="stylesheet" href="../css/style.css">
         <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+        <style>
+            .id {
+                width: 100%;
+                text-align: center;
+                font-weight: bold;
+                padding: 1rem;
+                border: none;
+
+            }
+        </style>
     </head>
     <body>
     <div class="navbar">   
@@ -26,7 +36,9 @@
         <div class="modal-content">
             <span class="close" onclick="closeModal('modal2')">&times;</span>
             <h2>Consultar estudiantes</h2>
-            <p>Contenido del modal para consultar estudiantes.</p>
+            <form action="../back-php/con-estudiantes-backend.php" method="post">
+                <input type="text" class="id" name="id" placeholder="Identificación del alumno">
+            </form>
         </div>
     </div>
 
