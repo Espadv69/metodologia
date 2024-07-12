@@ -15,16 +15,16 @@
         <?php require_once "../layout/header.php" ?>
         <h4>SELECCIONE SU CURSO</h4>
         <form action="" class="form-cursos">
-            <input type="text" name="nombre" placeholder="Ingrese su nombre" required>
-            <input type="email" name="email" placeholder="nombre@ejemplo.com" required>
+            <input type="text" name="nombre" placeholder="Ingrese su nombre" required maxlength="20">
+            <input type="email" name="email" placeholder="nombre@ejemplo.com" required maxlength="30">
 
             <div class="form-cursos-cuenta">
-                <input type="number" name="n_cuenta" placeholder="Número de cuenta">
-                <input type="number" name="cvv" placeholder="CVV">
+                <input type="number" name="numero_cuenta" placeholder="Número de cuenta" maxlength="20">
+                <input type="number" name="cvv" placeholder="CVV" maxlength="3">
             </div>
 
             <label for="date">Caducidad</label>
-            <input type="date" name="f_caducidad" id="date">
+            <input type="date" name="caducidad" id="date">
 
             <select name="select" required>
                 <option disabled selected name="cursos">Cursos</option>
