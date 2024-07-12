@@ -14,7 +14,7 @@
     <body>
         <?php require_once "../layout/header.php" ?>
         <h4>SELECCIONE SU CURSO</h4>
-        <form action="" class="form-cursos">
+        <form action="../back-php/cursos-backend.php" method="post" class="form-cursos">
             <input type="text" name="nombre" placeholder="Ingrese su nombre" required maxlength="20">
             <input type="email" name="email" placeholder="nombre@ejemplo.com" required maxlength="30">
 
@@ -26,8 +26,8 @@
             <label for="date">Caducidad</label>
             <input type="date" name="caducidad" id="date">
 
-            <select name="select" required>
-                <option disabled selected name="cursos">Cursos</option>
+            <select name="cursos" required>
+                <option disabled selected>Cursos</option>
                 <option value="HTML 50€">HTML</option>
                 <option value="CSS 75€">CSS</option>
                 <option value="JS 100€">JS</option>
