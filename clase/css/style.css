@@ -657,3 +657,37 @@ section {
         box-shadow: 0px 2px 5px gray;
     }
 } 
+/**********/
+
+/* ALUMNO */
+.div-alert {
+    color: whitesmoke;
+    top: 1rem;
+    position: relative;
+    width: 100%;
+    max-width: 600px;
+    margin: auto;
+    padding: 2rem;
+    background-color: rgb(255, 148, 148);
+    border-radius: .5rem;
+}
+
+.span-comentario {
+    font-size: 20px;
+    color: #ff0000;
+}
+
+.cerrar {
+    font-family: cursive;
+    position: absolute;
+    cursor: pointer;
+    padding: 1rem;
+    color: #ff0000;
+    font-size: 2rem;
+    right: -14px;
+    top: -24px;
+}
+
+.cerrar:hover {
+    color: whitesmoke;
+}
