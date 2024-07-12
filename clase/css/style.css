@@ -28,6 +28,33 @@ h4 {
 }
 /*******/
 
+/* HOME */
+.img-head {
+    padding: .5rem 2rem;
+    display: flex;
+    justify-content: center;
+    background-color: #0F67B1;
+
+    img {
+        max-width: 400px;
+    }
+}
+
+.flex-home {
+    margin: auto;
+    width: 100%;
+    max-width: 600px;
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    gap: 2rem;
+
+    img {
+        width: 250px;
+    }
+}
+/********/
+
 /* NAV BAR */
 .navbar {
     width: 100%;
