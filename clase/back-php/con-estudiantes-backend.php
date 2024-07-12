@@ -44,6 +44,12 @@
         align-items: center;
         gap: 1rem;
 
+        input {
+            border: none;
+            outline: none;
+            padding: 1rem;
+        }
+
         label {
             text-transform: uppercase
         }
@@ -56,7 +62,6 @@
             font-size: 16px;
             border: none;
             outline: none;
-            box-shadow: 0px 0px 10px black;
         }
 
         button {
@@ -70,6 +75,10 @@
             color: whitesmoke;
             padding: 1rem;
         }
+    }
+
+    .imprimir {
+        color: whitesmoke;
     }
 </style>
 <body>
@@ -93,9 +102,12 @@
     echo "<br><a href='../php/reg-notas.php' class='volver'>Volver</a><br><br>";
     ?>
 
-    <form action="./comentario-backend.php" method="post" class="form-consulta">
+    <form action="../php/alumno.php" method="post" class="form-consulta">
+        <input type="text" name="id" placeholder="Ingrese el ID" required>
         <label for="textarea">Escribe un comentario al alumno</label>
-        <textarea name="enviar" id="textarea" rows="7"></textarea>
+        <textarea name="texto" id="textarea" rows="7" required></textarea>
         <button>Enviar</button>
     </form>
+
+    <p class="imprimir"></p>
 </body>
