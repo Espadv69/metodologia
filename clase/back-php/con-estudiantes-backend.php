@@ -1,3 +1,4 @@
+<link rel="stylesheet" href="../css/style.css">
 <style>
     body {
         background-color: #121212;
@@ -32,6 +33,44 @@
         background-color: red;
         color: whitesmoke;
     }
+
+    .form-consulta {
+        padding: 1rem;
+        background-color: gray;
+        color: whitesmoke;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 1rem;
+
+        label {
+            text-transform: uppercase
+        }
+
+        textarea {
+            border-radius: .5rem;
+            font-weight: bold;
+            resize: none;
+            text-align: center;
+            font-size: 16px;
+            border: none;
+            outline: none;
+            box-shadow: 0px 0px 10px black;
+        }
+
+        button {
+            cursor: pointer;
+            border-radius: .5rem;
+            font-family: "Roboto", sans-serif;
+            text-transform: uppercase;
+            font-weight: bold;
+            border: 2px solid whitesmoke;
+            background: transparent;
+            color: whitesmoke;
+            padding: 1rem;
+        }
+    }
 </style>
 <body>
     <h5 class="modal-consultar">
@@ -51,6 +90,12 @@
 
     <?php
     // BUTTON 
-    echo "<a href='../php/reg-notas.php' class='volver'>Volver</a><br><br>";
+    echo "<br><a href='../php/reg-notas.php' class='volver'>Volver</a><br><br>";
     ?>
+
+    <form action="./comentario-backend.php" method="post" class="form-consulta">
+        <label for="textarea">Escribe un comentario al alumno</label>
+        <textarea name="enviar" id="textarea" rows="7"></textarea>
+        <button>Enviar</button>
+    </form>
 </body>
