@@ -190,6 +190,7 @@ h4 {
     grid-template-areas: 
     "img h4 h4"
     "img item item";
+    gap: 1rem;
 
     div:first-child {
         grid-area: img;
