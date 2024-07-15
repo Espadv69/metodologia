@@ -93,6 +93,12 @@
     // ARRAY
     if($row = mysqli_fetch_array($check_all)) {
         echo "El nombre del estudiante es: <span class='span'>" . $row["nombre"] . "</span><br>El número de identificación del estudiante es: <span class='span'>" . $row["id"] . "</span><br>El alumno es: <span class='span'>" . $row["apto"] . "</span>";
+    } else {
+        echo "
+        <script>
+            alert('Alumno inexistente');
+            window.location = '../php/reg-notas.php';
+        </script>";
     }
     ?>
     </h5>
