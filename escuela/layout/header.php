@@ -16,12 +16,14 @@
                 <a onclick="openModal('modal2')"><i class="bi bi-person-vcard-fill"></i> Consultar estudiantes</a>
                 <a onclick="openModal('modal3')"><i class="bi bi-person-fill-add"></i> Registro profesores</a>
                 <a href="./reg-notas.php"><i class="bi bi-card-checklist"></i> Registro de notas</a>
+                <a onclick="openModal('modal4')"><i class="bi bi-scissors"></i> Modificar</a>
+                <a onclick="openModal('modal5')"><i class="bi bi-trash-fill"></i> Eliminar</a>
             </div>
         </div>
         <a href="./home.php" class="a btn"><i class="bi bi-house-door-fill"></i> INICIO</a>
     </div> 
-    <!-- Modals -->
 
+    <!-- Modals -->
     <div id="modal2" class="modal">
         <div class="modal-content">
             <span class="close" onclick="closeModal('modal2')">&times;</span>
@@ -50,8 +52,21 @@
     <div id="modal4" class="modal">
         <div class="modal-content">
             <span class="close" onclick="closeModal('modal4')">&times;</span>
-            <h2>Registro de notas</h2>
-            <p>Contenido del modal para registrar notas.</p>
+            <h2>Modificar</h2>
+            <form class="modify" id="loginForm">
+                <input type="text" name="usuario" placeholder="Ingrese su usuario" required>
+                <input type="password" name="pass" placeholder="Ingrese su contraseña" required>
+                <button type="submit">Entrar</button>
+            </form><br>
+            <p id="message"></p>
+
+        </div>
+    </div>
+
+    <div id="modal5" class="modal">
+        <div class="modal-content">
+            <span class="close" onclick="closeModal('modal5')">&times;</span>
+            <h2>Eliminar</h2>
         </div>
     </div>
     
