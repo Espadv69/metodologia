@@ -175,12 +175,34 @@ h4 {
     font-size: 22px;
     line-height: 1.4;
 }
+
+.modify {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 1rem;
+
+    input {
+        padding: .5rem;
+        border: none;
+        border-bottom: 2px solid black;
+        outline: none;
+    }
+
+    button {
+        padding: .5rem;
+        font-weight: bold;
+        border: 2px solid black;
+        outline: none;
+        background: transparent;
+    }
+}
 /***********/
 
 /* FOOTER */
 .footer-lay {
     width: 100%;
-    bottom: 0;
     padding: 1rem;
     background-color: #96C9F4;
     backdrop-filter: blur(2px);
