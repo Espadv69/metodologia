@@ -66,7 +66,7 @@ document.getElementById('loginForm').addEventListener('submit', function(event) 
         document.getElementById('message').style.color = 'green';
 
         // Aquí podrías redirigir al usuario a otra página
-        window.location.href = './eliminar.php';
+        window.location.href = './modificar.php';
     } else {
         document.getElementById('message').textContent = 'Usuario o contraseña incorrectos';
         document.getElementById('message').style.color = 'red';
