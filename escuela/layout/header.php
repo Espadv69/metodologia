@@ -67,6 +67,12 @@
         <div class="modal-content">
             <span class="close" onclick="closeModal('modal5')">&times;</span>
             <h2>Eliminar</h2>
+            <form class="modify" id="loginForm2">
+                <input type="text" name="usuario2" placeholder="Ingrese su usuario" required>
+                <input type="password" name="pass2" placeholder="Ingrese su contraseña" required>
+                <button type="submit">Entrar</button>
+            </form><br>
+            <p id="message2"></p>            
         </div>
     </div>
     
