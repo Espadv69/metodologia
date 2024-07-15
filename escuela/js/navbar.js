@@ -48,7 +48,7 @@ window.onclick = function(event) {
     }
 }
 
-// Function to delete
+// Function to entry in modify
 document.getElementById('loginForm').addEventListener('submit', function(event) {
     event.preventDefault(); // Evita que el formulario se envíe automáticamente
 
@@ -70,5 +70,30 @@ document.getElementById('loginForm').addEventListener('submit', function(event) 
     } else {
         document.getElementById('message').textContent = 'Usuario o contraseña incorrectos';
         document.getElementById('message').style.color = 'red';
+    }
+});
+
+// Function to entry in delete
+document.getElementById('loginForm2').addEventListener('submit', function(event) {
+    event.preventDefault(); // Evita que el formulario se envíe automáticamente
+
+    // Usuario y contraseña definidos
+    const crearUsuario2 = 'Aitor';
+    const crearPass2 = '1234';
+
+    // Capturar los valores de los campos de entrada
+    const usuario2 = document.querySelector('input[name="usuario2"]').value;
+    const pass2 = document.querySelector('input[name="pass2"]').value;
+
+    // Validar los valores ingresados
+    if (usuario2 === crearUsuario2 && pass2 === crearPass2) {
+        document.getElementById('message2').textContent = 'Login exitoso';
+        document.getElementById('message2').style.color = 'green';
+
+        // Aquí podrías redirigir al usuario a otra página
+        window.location.href = './eliminar.php';
+    } else {
+        document.getElementById('message2').textContent = 'Usuario o contraseña incorrectos';
+        document.getElementById('message2').style.color = 'red';
     }
 });
