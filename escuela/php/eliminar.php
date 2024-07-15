@@ -7,10 +7,13 @@
         <link rel="stylesheet" href="../css/style.css">
     </head>
     <body>
-        <form action="../back-php/eliminar-backend.php" method="post" name="form-delete-modify">
+        <?php require_once "../layout/header.php" ?>
+        <h4>Eliminar Alumno</h4>
+        <form action="../back-php/eliminar-backend.php" method="post" class="form-delete-modify">
             <label for="id">Id</label>
             <input type="text" id="id" name="id">
             <button>Eliminar</button>
         </form>
+        <?php require_once "../layout/footer.php" ?>
     </body>
 </html>
