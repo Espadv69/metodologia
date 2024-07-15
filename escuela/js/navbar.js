@@ -47,3 +47,28 @@ window.onclick = function(event) {
         }
     }
 }
+
+// Function to delete
+document.getElementById('loginForm').addEventListener('submit', function(event) {
+    event.preventDefault(); // Evita que el formulario se envíe automáticamente
+
+    // Usuario y contraseña definidos
+    const crearUsuario = 'Aitor';
+    const crearPass = '1234';
+
+    // Capturar los valores de los campos de entrada
+    const usuario = document.querySelector('input[name="usuario"]').value;
+    const pass = document.querySelector('input[name="pass"]').value;
+
+    // Validar los valores ingresados
+    if (usuario === crearUsuario && pass === crearPass) {
+        document.getElementById('message').textContent = 'Login exitoso';
+        document.getElementById('message').style.color = 'green';
+
+        // Aquí podrías redirigir al usuario a otra página
+        window.location.href = './eliminar.php';
+    } else {
+        document.getElementById('message').textContent = 'Usuario o contraseña incorrectos';
+        document.getElementById('message').style.color = 'red';
+    }
+});
