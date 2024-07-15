@@ -7,6 +7,10 @@
         <link rel="stylesheet" href="../css/style.css">
     </head>
     <body>
-        
+        <form action="../back-php/eliminar-backend.php" method="post" name="form-delete-modify">
+            <label for="id">Id</label>
+            <input type="text" id="id" name="id">
+            <button>Eliminar</button>
+        </form>
     </body>
 </html>
