@@ -11,9 +11,9 @@
         <?php require_once "../layout/header.php" ?>    
 
         <h4>Modificar Alumno</h4>
-        <form action="../back-php/modificar2.php" method="post" class="form-delete-modify">
+        <form action="../back-php/modificar-backend.php" method="post" class="form-delete-modify">
             <label for="id">ID</label>
-            <input type="text" name="id" id="id">
+            <input type="text" name="id" id="id" required>
             <button>Modificar</button>
         </form>
 
