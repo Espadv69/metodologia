@@ -7,6 +7,17 @@
         <link rel="stylesheet" href="../css/style.css">
     </head>
     <body>
-        
+
+        <?php require_once "../layout/header.php" ?>    
+
+        <h4>Modificar Alumno</h4>
+        <form action="../back-php/modificar2.php" method="post" class="form-delete-modify">
+            <label for="id">ID</label>
+            <input type="text" name="id" id="id">
+            <button>Modificar</button>
+        </form>
+
+        <?php require_once "../layout/footer.php" ?> 
+
     </body>
 </html>
