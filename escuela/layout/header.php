@@ -6,11 +6,14 @@
         <title>NavBar</title>
         <link rel="stylesheet" href="../css/style.css">
         <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+        <style>
+
+        </style>
     </head>
     <body>
     <div class="navbar">   
         <div class="dropdown">
-            <button onclick="toggleMenu()" class="dropbtn btn"><i class="bi bi-list"></i>Menu</button>
+            <button onclick="toggleMenu()" class="dropbtn btn"><i class="bi bi-list"></i>MENU</button>
             <div id="myDropdown" class="dropdown-content">
                 <a href="./inscripcion.php"><i class="bi bi-person-fill-add"></i> Registro estudiantes</a>
                 <a onclick="openModal('modal2')"><i class="bi bi-person-vcard-fill"></i> Consultar estudiantes</a>
@@ -20,6 +23,12 @@
                 <a onclick="openModal('modal5')"><i class="bi bi-trash-fill"></i> Eliminar</a>
             </div>
         </div>
+        <details class="drop-hand">
+            <summary>Admin</summary>
+            <a href="#">Facturación</a>
+            <a href="./estado.php">Estado de cuenta</a>
+            <a href="#">Auditoria</a>
+        </details>
         <a href="./home.php" class="a btn"><i class="bi bi-house-door-fill"></i> INICIO</a>
     </div> 
 
