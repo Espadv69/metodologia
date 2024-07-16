@@ -58,6 +58,7 @@ h4 {
 /* NAV BAR */
 .navbar {
     width: 100%;
+    height: 85px;
     padding: 1rem;
     display: flex;
     justify-content: space-between;
@@ -136,6 +137,12 @@ h4 {
         }
     }
 }
+
+@media (max-width: 520px) {
+    .ocultar {
+        display: none;
+    }
+}
 .modal {
     display: none;
     position: fixed;
@@ -197,6 +204,39 @@ h4 {
         border: 2px solid black;
         outline: none;
         background: transparent;
+    }
+}
+
+.drop-hand {
+    display: flex;
+    flex-direction: column;
+    gap: .4rem;
+    overflow-y: visible;
+
+    summary {
+        font-size: 13.33px;
+        font-weight: bold;
+        letter-spacing: 10px;
+        font-family: "Roboto", sans-serif;
+        cursor: pointer;
+        text-transform: uppercase;
+        border: 2px solid white;
+        padding: 1rem;
+        color: whitesmoke;
+    }
+
+    a {
+        padding: 1rem;
+        text-decoration: none;
+        color: whitesmoke;
+        background-color: #0066ff;
+        z-index: 1;
+        transition: all 300ms ease;
+    }
+
+    a:hover {
+        background-color: #0066ff50;
+        backdrop-filter: blur(3px);
     }
 }
 /***********/
