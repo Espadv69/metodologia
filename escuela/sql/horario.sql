@@ -28,15 +28,15 @@ SET time_zone = "+00:00";
 --
 CREATE DATABASE db_checkbox
 
-use db_checkbox
+use metodologia
 
 CREATE TABLE `personal` (
   `per_id` int(11) NOT NULL,
-  `nombres` varchar(100) COLLATE utf8mb4_unicode_ci NOT NULL,
-  `apellidos` varchar(100) COLLATE utf8mb4_unicode_ci NOT NULL,
-  `pais` varchar(100) COLLATE utf8mb4_unicode_ci NOT NULL,
-  `programas` text COLLATE utf8mb4_unicode_ci NOT NULL
-) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci COMMENT='Tabla personal';
+  `nombres` varchar(100) NOT NULL,
+  `apellidos` varchar(100) NOT NULL,
+  `pais` varchar(100) NOT NULL,
+  `programas` text NOT NULL
+)
 
 --
 -- Volcado de datos para la tabla `personal`
