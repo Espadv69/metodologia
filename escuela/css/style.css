@@ -214,6 +214,7 @@ h4 {
     overflow-y: visible;
 
     summary {
+        text-align: center;
         font-size: 13.33px;
         font-weight: bold;
         letter-spacing: 10px;
