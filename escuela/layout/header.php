@@ -24,13 +24,13 @@
             </div>
         </div>
         <details class="drop-hand">
-            <summary><i class="bi bi-bank2"></i></summary>
+            <summary><i class="bi bi-bank2"></i>BILL</summary>
             <a href="#">Facturación</a>
             <a href="./estado.php">Estado de cuenta</a>
             <a href="#">Auditoria</a>
         </details>
         <details class="drop-hand">
-            <summary><i class="bi bi-microsoft-teams"></i></summary>
+            <summary><i class="bi bi-microsoft-teams"></i>TEAM</summary>
             <a href="./horario.php">Horario</a>
         </details>
         <a href="./home.php" class="a btn"><i class="bi bi-house-door-fill"></i> INICIO</a>
