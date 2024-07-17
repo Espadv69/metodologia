@@ -103,7 +103,7 @@
 
         <div class="btn">
             <button type="button" onclick="estado()">Añadir</button>
-            <button type="button" onclick="table()">Tabla</button>
+            <button type="button" onclick="table()">Descargar</button>
         </div>
 
         <?php require_once "../layout/footer.php" ?>
