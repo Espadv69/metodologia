@@ -13,7 +13,7 @@
     <body>
     <div class="navbar">   
         <div class="dropdown">
-            <button onclick="toggleMenu()" class="dropbtn btn"><i class="bi bi-list"></i>MENU</button>
+            <button onclick="toggleMenu()" class="dropbtn btn"><i class="bi bi-list"></i></button>
             <div id="myDropdown" class="dropdown-content">
                 <a href="./inscripcion.php"><i class="bi bi-person-fill-add"></i> Registro estudiantes</a>
                 <a onclick="openModal('modal2')"><i class="bi bi-person-vcard-fill"></i> Consultar estudiantes</a>
@@ -24,10 +24,14 @@
             </div>
         </div>
         <details class="drop-hand">
-            <summary>Admin</summary>
+            <summary><i class="bi bi-bank2"></i></summary>
             <a href="#">Facturación</a>
             <a href="./estado.php">Estado de cuenta</a>
             <a href="#">Auditoria</a>
+        </details>
+        <details class="drop-hand">
+            <summary><i class="bi bi-microsoft-teams"></i></summary>
+            <a href="./horario.php">Horario</a>
         </details>
         <a href="./home.php" class="a btn"><i class="bi bi-house-door-fill"></i> INICIO</a>
     </div> 
