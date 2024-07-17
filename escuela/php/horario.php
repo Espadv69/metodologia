@@ -105,6 +105,7 @@
                 margin: 10px auto;
                 border-collapse: collapse;
                 font-family: Arial, sans-serif;
+                margin-bottom: 15vh;
             }
 
             /* Estilos para el encabezado de la tabla */
@@ -156,7 +157,7 @@
                 <tr>
                     <th>#</th>
                     <th>Nombre</th>
-                    <th>Apellido</th>
+                    <th>Apellido(s)</th>
                     <th>Horario</th>
                     <th>Programas</th>
                 </tr>
@@ -203,13 +204,13 @@
                 <form action="../back-php/insert-horario-backend.php" method="post">
 
                     <label for="nombre">Nombre:</label>
-                    <input type="text" id="nombre">
+                    <input type="text" id="nombre" name="nombres">
 
-                    <label for="apellido">Apellido:</label>
-                    <input type="text" id="apellido">
+                    <label for="apellidos">Apellido:</label>
+                    <input type="text" id="apellidos" name="apellidos">
 
                     <label for="horario">Horario:</label>
-                    <input type="text" id="horario">
+                    <input type="text" id="horario" name="horario">
 
                     <label>Programas:</label>
                     <hr>
