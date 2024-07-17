@@ -88,7 +88,7 @@
                         border-left: 2px solid #45a049;
                         border-right: 2px solid #45a049;
                         background: transparent;
-                        outline-color: #45a049;
+                        outline: none;
                     }
                 }
             }
@@ -203,9 +203,9 @@
                     <label for="horario">Horario:</label>
                     <input type="text" id="horario">
 
+                    <label>Programas:</label>
                     <hr>
                     <div class="check-boxes">
-                        <label>Programas:</label>
 
                         <div>
                             <label for="java">Java</label>
