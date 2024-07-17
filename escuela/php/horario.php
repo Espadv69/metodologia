@@ -114,8 +114,8 @@
             }
 
             th {
+                text-align: center;
                 padding: 12px 15px;
-                text-align: left;
                 border-bottom: 1px solid #ddd;
             }
 
@@ -127,6 +127,12 @@
             /* Estilo para el último th (los programas) */
             th:last-child {
                 border-top-right-radius: 5px;
+            }
+
+            td {
+                text-align: center;
+                border: 2px solid lightgreen;
+                padding: 1rem;
             }
             .check-boxes {
                 display: flex;
@@ -156,8 +162,10 @@
                 </tr>
             </thead>
             <tbody>
-                <?php /*
+                <?php
                     require_once "../back-php/horario-backend.php";
+                    $query = $db -> prepare("SELECT * FROM personal");
+                    $query -> execute();
 
                     if($query -> rowCount() == 0) {
                         echo "
@@ -174,16 +182,16 @@
                             echo "
                             <tr>
                                 <td> " . $n . "</td>
-                                <td> " . $value['nombre'] . "</td>
-                                <td> " . $value['apellido'] . "</td>
+                                <td> " . $value['nombres'] . "</td>
+                                <td> " . $value['apellidos'] . "</td>
                                 <td> " . $value['horario'] . "</td>
-                                <td> " . $value['programa'] . "</td>
+                                <td> " . $value['programas'] . "</td>
                             </tr>
                             ";
                         }
                     }
                     $db = null;
-                */?>
+                ?>
             </tbody>
         </table>
 
@@ -192,7 +200,7 @@
             <!-- Contenido del Modal -->
             <div class="modal-content">
                 <h4>Horarios</h>
-                <form action="" method="">
+                <form action="../back-php/insert-horario-backend.php" method="post">
 
                     <label for="nombre">Nombre:</label>
                     <input type="text" id="nombre">
