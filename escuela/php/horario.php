@@ -132,7 +132,7 @@
 
             td {
                 text-align: center;
-                border: 2px solid lightgreen;
+                border: 1px solid #ddd;
                 padding: 1rem;
             }
             .check-boxes {
@@ -144,6 +144,48 @@
                 background-color: #4CAF5050;
                 padding: 1rem;
             }
+        .responsive-table {
+            width: 100%;
+            border-collapse: collapse;
+        }
+
+
+        @media screen and (max-width: 500px) {
+            .responsive-table thead {
+                display: none;
+            }
+
+            .responsive-table, 
+            .responsive-table tbody, 
+            .responsive-table tr, 
+            .responsive-table td {
+                display: block;
+                width: 100%;
+                border: none;
+            }
+
+            .responsive-table tr {
+                margin-bottom: 1.5rem;
+                border: 2px solid #ddd;
+            }
+
+            .responsive-table td {
+                text-align: right;
+                padding-left: 50%;
+                position: relative;
+                border-bottom: 1px solid #ddd;
+            }
+
+            .responsive-table td::before {
+                content: attr(data-label);
+                position: absolute;
+                left: 0;
+                width: 50%;
+                padding-left: 15px;
+                font-weight: bold;
+                text-align: left;
+            }
+        }
         </style>
     </head>
     <body>
@@ -152,7 +194,7 @@
 
         <h4>CORDINACIÓN DE HORARIO</h4>
         <button id="openModalBtn">Agregar horario</button>
-        <table>
+        <table class="responsive-table">
             <thead>
                 <tr>
                     <th>#</th>
@@ -182,11 +224,11 @@
                             $n++;
                             echo "
                             <tr>
-                                <td> " . $n . "</td>
-                                <td> " . $value['nombres'] . "</td>
-                                <td> " . $value['apellidos'] . "</td>
-                                <td> " . $value['horario'] . "</td>
-                                <td> " . $value['programas'] . "</td>
+                                <td data-label='#'> " . $n . "</td>
+                                <td data-label='Nombre'> " . $value['nombres'] . "</td>
+                                <td data-label='Apellido(s)'> " . $value['apellidos'] . "</td>
+                                <td data-label='Horario'> " . $value['horario'] . "</td>
+                                <td data-label='Programas'> " . $value['programas'] . "</td>
                             </tr>
                             ";
                         }
