@@ -95,13 +95,71 @@ function b_pago() {
     El pago al profesor es: <span>${total_profesor}€</span>`;
 }
 
+// FUNCTION FOR PAGO INSCRIPCIÓN
 function b_pago_ins() {
-    const presencial = 1.50;
-    const online = 1.10;
+    const java_d = parseFloat(prompt("Inscripciones de java"));
+    if(isNaN(java_d)) {
+        alert("No ingresó un número");
+        return;
+    }
 
-    
+    const python_d = parseFloat(prompt("Inscripciones de python"));
+    if(isNaN(python_d)) {
+        alert("No ingresó un número");
+        return;
+    }
+
+    const cPlus_d = parseFloat(prompt("Inscripciones de C++"));
+    if(isNaN(cPlus_d)) {
+        alert("No ingresó un número");
+        return;
+    }
+
+    const php_d = parseFloat(prompt("Inscripciones de php"));
+    if(isNaN(php_d)) {
+        alert("No ingresó un número");
+        return;
+    }
+
+    const total_ins = java_d + python_d + cPlus_d + php_d;
+    const total_pagar = (java * java_d) + (python * python_d) + (cPlus * cPlus_d) + (php * php_d);
+
+
+    const curso = prompt("Elija la operación a realizar: total o cxp (cxp --> cuentas por pagar)");
+
+    switch(curso) {
+        case "total":
+            document.querySelector(".print").innerHTML = `
+            Pagos de java <span>${java * java_d}€</span><br>
+            Pagos de python <span>${python * python_d}€</span><br>
+            Pagos de C++ <span>${cPlus * cPlus_d}€</span><br>
+            Pagos de php <span>${php * php_d}€</span><br>
+            Compraron en total <span>${total_ins} cursos</span><br>
+            El pago total recibido es: <span>${total_pagar}€</span><br>`;
+            break;
+
+        case "cxp":
+            document.querySelector(".print").innerHTML = `
+            Inscripciones de Java: <span>${java_d} inscripciones</span><br>
+            Inscripciones de Python: <span>${python_d} inscripciones</span><br>
+            Inscripciones de C++: <span>${cPlus_d} inscripciones</span><br>
+            Inscripciones de PHP: <span>${php_d} inscripciones</span><br>
+            Total inscripciones: <span>${total_ins} inscripciones</span><br>
+            Costo total por pagar:<br>
+            Java: <span>${(java * java_d).toFixed(2)}€</span><br>
+            Python: <span>${(python * python_d).toFixed(2)}€</span><br>
+            C++: <span>${(cPlus * cPlus_d).toFixed(2)}€</span><br>
+            PHP: <span>${(php * php_d).toFixed(2)}€</span><br>
+            Total por pagar: <span>${total_pagar.toFixed(2)}€</span><br>`;
+            break; 
+
+        default:
+            document.querySelector(".print").innerHTML = `No se reconoce el caso`;
+            break;
+    }
 }
 
+// FUNCTION FOR CAJA "CHICA"
 function b_caja() {
     const fondo = 300;
     const caja = parseFloat(prompt("¿Cuánto has gastado hoy?"));
