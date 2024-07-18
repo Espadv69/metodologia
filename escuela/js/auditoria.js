@@ -1,10 +1,11 @@
+// MY CONSTANTS VARIABLES
+const java = 75;
+const python = 50;
+const cPlus = 30;
+const php = 100;
+
 // FUNCTION FOR VENTAS
 function b_ventas() {
-    // MY CONSTANTS VARIABLES
-    const java = 75;
-    const python = 50;
-    const cPlus = 30;
-    const php = 100;
 
     // CHECK
     const valor = parseFloat(prompt("Cantidad de ventas del dia"));
@@ -92,4 +93,26 @@ function b_pago() {
     document.querySelector(".print").innerHTML = `Usted este mes ha gastado un total de: <span>${total}€</span><br>
     Este mes el profesor estuvo impartiendo clases<br> <span>${profesor} Horas</span><br>
     El pago al profesor es: <span>${total_profesor}€</span>`;
+}
+
+function b_pago_ins() {
+    const presencial = 1.50;
+    const online = 1.10;
+
+    
+}
+
+function b_caja() {
+    const fondo = 300;
+    const caja = parseFloat(prompt("¿Cuánto has gastado hoy?"));
+    if(!isNaN(caja)) {
+        if(caja < 300) {
+            document.querySelector(".print").innerHTML = `Tus gastos fueron <span>${caja}€</span><br>Tus fondos eran: <span>${fondo}€</span><br>Ahora tienes: <span>${fondo - caja}€</span> en los fondos`;
+        } else {
+            document.querySelector(".print").innerHTML = `Tus gastos fueron <span>${caja}€</span><br>pasastes el límite y ahora en los fondos tienes<br><span>${fondo - caja}€</span>`;
+        }
+    } else {
+        alert("no metiste un número");
+        return;
+    }
 }
