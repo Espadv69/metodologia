@@ -14,7 +14,7 @@
 
         <div class="auditoria-buttons">
             <button type="button" onclick="b_ventas()">ventas</button>
-            <button type="button">pago</button>
+            <button type="button" onclick="b_pago()">pago</button>
             <button type="button">inscripcion</button>
             <button type="button">caja</button>
             <button type="button">gastos fijos</button>
