@@ -25,9 +25,8 @@
         </div>
         <details class="drop-hand">
             <summary><i class="bi bi-bank2"></i>BILL</summary>
-            <a href="#">Facturación</a>
             <a href="./estado.php">Estado de cuenta</a>
-            <a href="#">Auditoria</a>
+            <a href="./auditoria.php">Auditoria</a>
         </details>
         <details class="drop-hand">
             <summary><i class="bi bi-microsoft-teams"></i>TEAM</summary>
