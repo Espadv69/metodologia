@@ -13,6 +13,10 @@ body {
     min-height: 100vh;
 }
 
+.body-auditoria {
+    background: linear-gradient(90deg, #12121290 0%, #12121280 100%), url(../img/auditoria-bg.jpg);
+}
+
 .main-layout {
     margin-top: 3rem;
 }
@@ -801,3 +805,66 @@ section {
     }
 }
 /************************/
+
+/* AUDITORIA */
+.auditoria-wall {
+    margin: auto;
+    margin-top: 5vh;
+    margin-bottom: 5vh;
+    padding: 2rem;
+    width: 100%;
+    max-width: 600px;
+    height: 40vh;
+    overflow-y: auto;
+    border: 2px solid whitesmoke;
+    background-color: #12121270;
+    backdrop-filter: blur(3px);
+}
+
+.auditoria-buttons {
+    margin: auto;
+    margin-bottom: 5vh;
+    padding: .5rem;
+    width: 90%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: .9rem;
+
+    button {
+        cursor: pointer;
+        font-family: "Roboto", sans-serif;
+        padding: .6rem 1rem;
+        border: 2px solid whitesmoke;
+        border-radius: .5rem;
+        color: whitesmoke;
+        outline: none;
+        background-color: #fffdfd10;
+        backdrop-filter: blur(1px);
+        font-weight: bold;
+        text-transform: uppercase;
+        letter-spacing: 5px;
+        box-shadow: 0px 0px 10px black;
+        transition: all 300ms ease;
+    }
+
+    button:hover {
+        backdrop-filter: blur(9px) brightness(150%);
+    }
+
+    button:nth-child(12) {
+        border: 2px solid red;
+        background-color: red;
+    }
+}
+
+.print {
+    text-align: center;
+    color: whitesmoke;
+
+    span {
+        color: #0066ff;
+        font-weight: bold;
+    }
+}
