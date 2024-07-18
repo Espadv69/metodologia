@@ -6,7 +6,27 @@
         <title>Auditoria</title>
         <link rel="stylesheet" href="../css/style.css">
     </head>
-    <body>
-        
+    <body class="body-auditoria">
+        <?php require_once "../layout/header.php" ?>
+        <div class="auditoria-wall">
+            <p class="print"></p>
+        </div>
+
+        <div class="auditoria-buttons">
+            <button type="button" onclick="b_ventas()">ventas</button>
+            <button type="button">pago</button>
+            <button type="button">inscripcion</button>
+            <button type="button">caja</button>
+            <button type="button">gastos fijos</button>
+            <button type="button">gastos variables</button>
+            <button type="button">sueldos</button>
+            <button type="button">precios-v</button>
+            <button type="button">compras</button>
+            <button type="button">inventario</button>
+            <button type="button">auditoria</button>
+            <button type="button">cerrar</button>
+        </div>
+        <?php require_once "../layout/footer.php" ?>
+        <script src="../js/auditoria.js"></script>
     </body>
 </html>
