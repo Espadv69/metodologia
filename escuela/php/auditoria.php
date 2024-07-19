@@ -24,7 +24,7 @@
             <button type="button" onclick="b_variable()">gastos variables</button>
             <button type="button" onclick="b_sueldos()">sueldos</button>
             <button type="button" onclick="b_comprar()">compras</button>
-            <button type="button">inventario</button>
+            <button type="button" onclick="b_inventario()">inventario</button>
             <button type="button">auditoria</button>
             <button type="button" onclick="clean()">Limpiar</button>
         </div>
