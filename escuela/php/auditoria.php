@@ -22,9 +22,8 @@
             <button type="button" onclick="b_caja()">caja</button>
             <button type="button" onclick="b_fijo()">gastos fijos</button>
             <button type="button" onclick="b_variable()">gastos variables</button>
-            <button type="button" onclick="sueldos()">sueldos</button>
-            <button type="button">precios-v</button>
-            <button type="button">compras</button>
+            <button type="button" onclick="b_sueldos()">sueldos</button>
+            <button type="button" onclick="b_comprar()">compras</button>
             <button type="button">inventario</button>
             <button type="button">auditoria</button>
             <button type="button" onclick="clean()">Limpiar</button>
