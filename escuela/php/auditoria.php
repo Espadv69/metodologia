@@ -25,7 +25,7 @@
             <button type="button" onclick="b_sueldos()">sueldos</button>
             <button type="button" onclick="b_comprar()">compras</button>
             <button type="button" onclick="b_inventario()">inventario</button>
-            <button type="button">auditoria</button>
+            <button type="button" onclick="b_auditoria()">auditoria</button>
             <button type="button" onclick="clean()">Limpiar</button>
         </div>
         <br><br>
