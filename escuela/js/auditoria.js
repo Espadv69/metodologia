@@ -200,3 +200,7 @@ function b_fijo() {
     document.querySelector(".print").innerHTML = `Sus gastos de este mes serán de: <span>${add_gasto + gasto_fijo}€</span><br>Le quedarán de fondo: <span>${fondos - (add_gasto + gasto_fijo)}€</span>`; // IMPRIMIR LA FUNCIÓN
 }
 
+// FUNCTION FOR GASTOS VARIABLES
+function b_variable() {
+    
+}
