@@ -278,7 +278,7 @@ function b_variable() {
 }
 
 // FUNCTION FOR SUELDOS
-function sueldos() {
+function b_sueldos() {
     const persona = prompt("Ingrese nombre del trabajador"); // NOMBRE
     if(persona === "") {
         document.querySelector(".print").innerHTML = "No se añadió nombre de empleado";
@@ -367,6 +367,45 @@ function sueldos() {
         default: 
         document.querySelector(".print").innerHTML = `No se ingresó puesto`;
         break;
+    }
+}
+
+// FUNCTION FOR COMPRAS
+function b_comprar() {
+    const cursos = {
+        "JavaScript": 100,
+        "React": 150,
+        "Node.js": 180,
+        "Python": 120
+    };
+
+    let carrito = [];
+    let total = 0;
+    let seleccion = prompt("Bienvenido a la tienda de cursos de desarrollo. ¿Deseas comprar un curso? (sí/no)").trim().toLowerCase();
+
+    while (seleccion === "sí" || seleccion === "si") {
+        let cursoElegido = prompt(`¿Qué curso te gustaría comprar?\nOpciones:\n${Object.keys(cursos).join(" - ")}\nEscribe el nombre del curso exactamente como aparece`).trim();
+
+        if (cursos[cursoElegido] !== undefined) {
+            carrito.push(cursoElegido);
+            total += cursos[cursoElegido];
+            alert(`${cursoElegido} añadido al carrito. Precio: ${cursos[cursoElegido]}€`);
+        } else {
+            alert("El curso seleccionado no está disponible. Por favor, elige uno de los cursos listados.");
+        }
+
+        seleccion = prompt("¿Deseas comprar otro curso? (sí/no)").trim().toLowerCase();
+    }
+
+    if (carrito.length > 0) {
+        let resumen = `Resumen de tu compra:\n\n`;
+        carrito.forEach(curso => {
+            resumen += `${curso}: ${cursos[curso]}€\n`;
+        });
+        resumen += `\nTotal: ${total}€`;
+        document.querySelector(".print").innerHTML = resumen;
+    } else {
+        document.querySelector(".print").innerHTML = "No se ha realizado ninguna compra.";
     }
 }
 
