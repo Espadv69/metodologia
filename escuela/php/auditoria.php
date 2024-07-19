@@ -25,7 +25,7 @@
             <button type="button">inventario</button>
             <button type="button">auditoria</button>
             <button type="button">cerrar</button>
-        </div>
+        </div><br><br>
         <?php require_once "../layout/footer.php" ?>
         <script src="../js/auditoria.js"></script>
     </body>
