@@ -445,6 +445,46 @@ function b_inventario() {
     document.querySelector(".print").innerHTML = resumen;
 }
 
+// FUNCTION FOR AUDITORIA
+function b_auditoria() {
+    // Datos de ejemplo
+    const auditoria = {
+        transacciones: [
+            { curso: "JavaScript Básico", cantidad: 3 },
+            { curso: "React", cantidad: 2 },
+            { curso: "Python", cantidad: 1 }
+        ],
+        inventario: {
+            "JavaScript Básico": 7,
+            "JavaScript Avanzado": 5,
+            "React": 6,
+            "Node.js": 7,
+            "Python": 11
+        },
+        fecha: new Date().toLocaleString()
+    };
+
+    let resumen = `<h2>Informe de Auditoría</h2>`;
+    resumen += `<p><strong>Fecha y Hora:</strong> ${auditoria.fecha}</p>`;
+    resumen += `<h3>Transacciones:</h3>`;
+    resumen += `<ul>`;
+    auditoria.transacciones.forEach(transaccion => {
+        resumen += `<li>Curso: ${transaccion.curso} - Cantidad: ${transaccion.cantidad}</li>`;
+    });
+    resumen += `</ul>`;
+    resumen += `<h3>Inventario Actual:</h3>`;
+    resumen += `<ul>`;
+    for (let curso in auditoria.inventario) {
+        if (auditoria.inventario.hasOwnProperty(curso)) {
+            let cantidad = auditoria.inventario[curso];
+            resumen += `<li>${curso}: ${cantidad} disponibles</li>`;
+        }
+    }
+    resumen += `</ul>`;
+
+    document.querySelector(".print").innerHTML = resumen;
+}
+
 // FUNCTION TO CLEAN THE CONSOLE
 function clean() {
     document.querySelector(".print").innerHTML = "";
