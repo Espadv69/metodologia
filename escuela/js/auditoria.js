@@ -189,7 +189,7 @@ function b_fijo() {
         ¿Quiere añadir otro gasto fijo para este mes?
         `)); // MENSAJE PARA AÑADIR NUEVOS GASTOS
 
-        // CHECK
+        // CHECK POR SI LA PERSONA NO AÑADE UN NÚMERO👇
         if(isNaN(add_gasto)) {
             document.querySelector(".print").innerHTML = `
             No se añadió ningún número
@@ -197,7 +197,10 @@ function b_fijo() {
             return;
         }
 
-    document.querySelector(".print").innerHTML = `Sus gastos de este mes serán de: <span>${add_gasto + gasto_fijo}€</span><br>Le quedarán de fondo: <span>${fondos - (add_gasto + gasto_fijo)}€</span>`; // IMPRIMIR LA FUNCIÓN
+    document.querySelector(".print").innerHTML = `
+    Sus gastos de este mes serán de: <span>${add_gasto + gasto_fijo}€</span><br>
+    Le quedarán de fondo: <span>${fondos - (add_gasto + gasto_fijo)}€</span>
+    `; // IMPRIMIR LA FUNCIÓN
 }
 
 // FUNCTION FOR GASTOS VARIABLES
