@@ -27,7 +27,7 @@
             <button type="button">compras</button>
             <button type="button">inventario</button>
             <button type="button">auditoria</button>
-            <button type="button">cerrar</button>
+            <button type="button" onclick="clean()">Limpiar</button>
         </div>
         <br><br>
 
