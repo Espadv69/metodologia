@@ -1,4 +1,4 @@
-// MY CONSTANTS VARIABLES
+// MY CONSTANTS
 const java = 75;
 const python = 50;
 const cPlus = 30;
@@ -174,3 +174,29 @@ function b_caja() {
         return;
     }
 }
+
+// FUNCTION FOR GASTOS FIJOS
+function b_fijo() {
+    const fondos = 2000; // FONDOS
+    const gasto_fijo = 700; // GASTOS FIJOS
+
+    alert(`
+        Tus fondos son: ${fondos}€
+        Tu gasto fijo de todos los meses es: ${gasto_fijo}€
+        `); // ALERT QUE DICE LO QUE GASTA MENSUALMENTE Y TUS FONDOS
+
+    const add_gasto = parseFloat(prompt(`
+        ¿Quiere añadir otro gasto fijo para este mes?
+        `)); // MENSAJE PARA AÑADIR NUEVOS GASTOS
+
+        // CHECK
+        if(isNaN(add_gasto)) {
+            document.querySelector(".print").innerHTML = `
+            No se añadió ningún número
+            `;
+            return;
+        }
+
+    document.querySelector(".print").innerHTML = `Sus gastos de este mes serán de: <span>${add_gasto + gasto_fijo}€</span><br>Le quedarán de fondo: <span>${fondos - (add_gasto + gasto_fijo)}€</span>`; // IMPRIMIR LA FUNCIÓN
+}
+
