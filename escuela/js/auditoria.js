@@ -205,5 +205,74 @@ function b_fijo() {
 
 // FUNCTION FOR GASTOS VARIABLES
 function b_variable() {
+    const materias_primas = parseFloat(prompt(`
+        Añada los gastos de (Materia Prima) de este mes
+        `)) // MATERIA PRIMA
+        //CHECK POR SI ES NULL👇
+        if(isNaN(materias_primas)) {
+            document.querySelector(".print").innerHTML = `
+            <span>Materias primas</span> no puede ser nulo, minimo 0;
+            `;
+            return;
+        }
     
+    const mano_obra = parseFloat(prompt(`
+        Añada los gastos de (Mano De Obra) de este mes
+        `)) // MANO DE OBRA
+        //CHECK POR SI ES NULL👇
+        if(isNaN(mano_obra)) {
+            document.querySelector(".print").innerHTML = `
+            <span>Mano de obra</span> no puede ser nulo, minimo 0;
+            `;
+            return;
+        }
+
+    const energia = parseFloat(prompt(`
+        Añada los gastos de (Energía) de este mes
+        `)) // COSTE DE ENERGÍA
+        //CHECK POR SI ES NULL👇
+        if(isNaN(energia)) {
+            document.querySelector(".print").innerHTML = `
+            <span>Energia</span> no puede ser nulo, minimo 0;
+            `;
+            return;
+        }
+
+    const comisiones = parseFloat(prompt(`
+        Añada los gastos de (Comisiones De Ventas) de este mes
+        `)) // COMISIONES DE VENTAS
+        //CHECK POR SI ES NULL👇
+        if(isNaN(comisiones)) {
+            document.querySelector(".print").innerHTML = `
+            <span>Comisiones</span> no puede ser nulo, minimo 0;
+            `;
+            return;
+        }
+
+    const gastos_envios_distribucion = parseFloat(prompt(`
+        Añada los gastos de (Envio Y Distribución) de este mes
+        `)) // GASTOS DE ENVIOS Y DISTRIBUCIÓN
+        //CHECK POR SI ES NULL👇
+        if(isNaN(gastos_envios_distribucion)) {
+            document.querySelector(".print").innerHTML = `
+            <span>Gastos de envios y distribución</span> no puede ser nulo, minimo 0;
+            `;
+            return;
+        }
+
+    const total = materias_primas + mano_obra + energia + comisiones + gastos_envios_distribucion; // TOTAL
+
+    document.querySelector(".print").innerHTML = `
+    Sus gastos de Materia Prima este mes son de: <span>${materias_primas}€</span><br>
+
+    Sus gastos de Mano De Obra este mes son de: <span>${mano_obra}€</span><br>
+
+    Sus gastos de Energía este mes son de: <span>${energia}€</span><br>
+
+    Sus gastos de Comisiones este mes son de: <span>${comisiones}€</span><br>
+
+    Sus gastos de envio y distribución de este mes son de: <span>${gastos_envios_distribucion}€</span><br><br>
+
+    En total sus gastos de este mes serán de: <span>${total}€</span>
+    `;
 }
