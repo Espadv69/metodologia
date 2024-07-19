@@ -277,6 +277,99 @@ function b_variable() {
     `;
 }
 
+// FUNCTION FOR SUELDOS
+function sueldos() {
+    const persona = prompt("Ingrese nombre del trabajador"); // NOMBRE
+    if(persona === "") {
+        document.querySelector(".print").innerHTML = "No se añadió nombre de empleado";
+        return;
+    }
+
+    const persona_trabajo = prompt(`
+        Ingrese el trabajo de ${persona} en nuestra oficina\n
+        Puestos de trabajo:\n
+        Programador - Limpieza - Seguridad
+        `); // CUÁL ES EL PUESTO DE TRABAJO DE LA PERSONA
+    if(persona_trabajo === "") {
+        document.querySelector(".print").innerHTML = "No se añadió Puesto del empleado";
+        return;
+    }
+
+    switch(persona_trabajo) {
+        /* PRIMER BLOQUE */
+        case "programador":
+            const elige = prompt(`Junior👨‍🎓 o Senior👨‍💻`);
+            switch(elige) {
+                case "junior":
+                    document.querySelector(".print").innerHTML = `
+                    Sueldo de Junior: <span>3.000€</span> mensuales.<br>
+                    Horas de trabajo: <span>6</span> Horas diarias.<br>
+                    Dias de trabajo: <span>20</span> Dias por mes.
+                    `;
+                    break;
+                    
+                case "senior":
+                    document.querySelector(".print").innerHTML = `
+                    Sueldo de Senior: <span>6.000€</span> mensuales.<br>
+                    Horas de trabajo: <span>4</span> Horas diarias.<br>
+                    Dias de trabajo: <span>23</span> Dias por mes.
+                    `;
+                    break;
+
+                default: 
+                    document.querySelector(".print").innerHTML = `
+                    No hubo elección
+                    `;
+                    break;
+                }
+            break;
+        /* FIN DEL PRIMER BLOQUE */
+
+        /* SEGUNDO BLOQUE */
+        case "limpieza":
+            document.querySelector(".print").innerHTML = `
+            Sueldo de limpiador: <span>1.800€</span> mensuales.<br>
+            Horas de trabajo: <span>6</span> Horas diarias.<br>
+            Dias de trabajo: <span>25</span> Dias por mes.
+            `;
+            break;
+        /* FIN DEL SEGUNDO BLOQUE */
+
+        /* TERCER BLOQUE */
+        case "seguridad":
+            const elige_s = prompt(`Ciber💻 o Seguridad👮‍♂️`);
+            console.log(`Opción ingresada: ${elige_s}`);
+            switch(elige_s) {
+                case "ciber":
+                    document.querySelector(".print").innerHTML = `
+                    Sueldo de CiberSeguridad: <span>9.000€</span> mensuales.<br>
+                    Horas de trabajo: <span>8</span> Horas diarias.<br>
+                    Dias de trabajo: <span>25</span> Dias por mes.
+                    `;
+                    break;
+
+                case "seguridad":
+                    document.querySelector(".print").innerHTML = `
+                    Sueldo de Seguridad: <span>10.000€</span> mensuales.<br>
+                    Horas de trabajo: <span>8</span> Horas diarias.<br>
+                    Dias de trabajo: <span>20</span> Dias por mes.
+                    `;
+                    break; 
+
+                default:
+                    document.querySelector(".print").innerHTML = `No se ingresó puesto`;
+                    break;
+            }
+            break;
+        /* FIN DEL TERCER BLOQUE */
+
+        /* DEFAULT */
+        default: 
+        document.querySelector(".print").innerHTML = `No se ingresó puesto`;
+        break;
+    }
+}
+
 // FUNCTION TO CLEAN THE CONSOLE
 function clean() {
     document.querySelector(".print").innerHTML = "";
