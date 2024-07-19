@@ -8,10 +8,13 @@
     </head>
     <body class="body-auditoria">
         <?php require_once "../layout/header.php" ?>
+
+        <!-- Aquí se imprimen los datos -->
         <div class="auditoria-wall">
             <p class="print"></p>
         </div>
 
+        <!-- Aquí estan los botones -->
         <div class="auditoria-buttons">
             <button type="button" onclick="b_ventas()">ventas</button>
             <button type="button" onclick="b_pago()">pago</button>
@@ -25,7 +28,9 @@
             <button type="button">inventario</button>
             <button type="button">auditoria</button>
             <button type="button">cerrar</button>
-        </div><br><br>
+        </div>
+        <br><br>
+
         <?php require_once "../layout/footer.php" ?>
         <script src="../js/auditoria.js"></script>
     </body>
