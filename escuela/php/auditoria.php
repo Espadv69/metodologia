@@ -21,7 +21,7 @@
             <button type="button" onclick="b_pago_ins()">inscripcion</button>
             <button type="button" onclick="b_caja()">caja</button>
             <button type="button" onclick="b_fijo()">gastos fijos</button>
-            <button type="button">gastos variables</button>
+            <button type="button" onclick="b_variable()">gastos variables</button>
             <button type="button">sueldos</button>
             <button type="button">precios-v</button>
             <button type="button">compras</button>
