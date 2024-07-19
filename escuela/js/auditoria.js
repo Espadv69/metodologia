@@ -276,3 +276,8 @@ function b_variable() {
     En total sus gastos de este mes serán de: <span>${total}€</span>
     `;
 }
+
+// FUNCTION TO CLEAN THE CONSOLE
+function clean() {
+    document.querySelector(".print").innerHTML = "";
+}
