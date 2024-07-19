@@ -853,7 +853,7 @@ section {
         backdrop-filter: blur(9px) brightness(150%);
     }
 
-    button:nth-child(12) {
+    button:nth-child(11) {
         border: 2px solid red;
         background-color: red;
     }
