@@ -409,6 +409,42 @@ function b_comprar() {
     }
 }
 
+// FUNCTION FOR INVENTARIO
+function b_inventario() {
+    const inventario = {
+        "JavaScript Básico": {
+            cantidad: 10,
+            precio: 100
+        },
+        "JavaScript Avanzado": {
+            cantidad: 5,
+            precio: 200
+        },
+        "React": {
+            cantidad: 8,
+            precio: 150
+        },
+        "Node.js": {
+            cantidad: 7,
+            precio: 180
+        },
+        "Python": {
+            cantidad: 12,
+            precio: 120
+        }
+    };
+
+    let resumen = `<h2>Inventario de Cursos</h2>`;
+    for (let curso in inventario) {
+        if (inventario.hasOwnProperty(curso)) {
+            let { cantidad, precio } = inventario[curso];
+            resumen += `<p><strong>${curso}</strong>: ${cantidad} disponibles - Precio: ${precio}€</p>`;
+        }
+    }
+
+    document.querySelector(".print").innerHTML = resumen;
+}
+
 // FUNCTION TO CLEAN THE CONSOLE
 function clean() {
     document.querySelector(".print").innerHTML = "";
