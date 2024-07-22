@@ -1,9 +1,10 @@
 document.addEventListener("DOMContentLoaded", () => {
     const menuIcon = document.getElementById("menu-icon");
-    const menuContent = document.getElementById("menu-content");
+    const sideMenu = document.getElementById("side-menu");
 
     menuIcon.addEventListener("click", () => {
         menuIcon.classList.toggle("open");
-        menuContent.classList.toggle("open-menu");
+        sideMenu.classList.toggle("open");
     });
 });
+
