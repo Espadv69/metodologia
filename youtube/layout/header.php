@@ -8,33 +8,34 @@
     </head>
     <body>
 
-        <div class="all-nav-yt">
-            <div style="display: flex; gap: 1rem;">
-                <div class="menu-icon" id="menu-icon">
-                    <div class="bar1"></div>
-                    <div class="bar2"></div>
-                    <div class="bar3"></div>
-                </div>
-                <img src="https://www.youtube.com/img/desktop/yt_1200.png" alt="" width="50px">
+    <div class="all-nav-yt">
+        <div style="display: flex; gap: 1rem; align-items: center;">
+            <div class="menu-icon" id="menu-icon">
+                <div class="bar1"></div>
+                <div class="bar2"></div>
+                <div class="bar3"></div>
             </div>
-            <div class="side-menu" id="side-menu">
-                <div style="display: flex; justify-content: center;">
-                    <img src="./img/yt.png" alt="" width="100px" >
-                </div>
-
-                <a href="http://localhost/metodologia/youtube/index.php"><i class="bi bi-house-fill"></i> Home</a>
-            </div>
-
-            <div>
-                <input type="text" placeholder="search"><i class="bi bi-search i"></i>
-            </div>
-
-            <div class="icons">
-                <a href="#"><i class="bi bi-bell"></i></a>
-                <a href="#"><i class="bi bi-camera-video"></i></a>
-                <a href="#"><i class="bi bi-person-circle"></i></a>
-            </div>
+            <img src="./img/yt-black.png" alt="YouTube" width="100px">
         </div>
+        <div class="search-bar">
+            <input type="text" placeholder="Search">
+            <button class="bi bi-search"></button>
+        </div>
+        <div class="icons">
+            <a href="#"><i class="bi bi-bell"></i></a>
+            <a href="#"><i class="bi bi-camera-video"></i></a>
+            <a href="#"><i class="bi bi-person-circle"></i></a>
+        </div>
+    </div>
+
+    <div class="side-menu" id="side-menu">
+        <div style="display: flex; justify-content: center; padding: 1rem 0;">
+            <img src="./img/yt.png" alt="YouTube" width="100px">
+        </div>
+        <a href="http://localhost/metodologia/youtube/index.php"><i class="bi bi-house-fill"></i> Home</a>
+        <!-- Agregar más enlaces según sea necesario -->
+    </div>
+
 
         <script src="./js/navbar.js"></script>
     </body>
