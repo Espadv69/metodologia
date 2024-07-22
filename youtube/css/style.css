@@ -7,30 +7,25 @@
 }
 
 body {
-    min-height: 100vh;
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    height: 100vh;
     background-color: #f0f0f0;
-}
-/***********/
-
-.navbar {
-    display: flex;
-    justify-content: center;
-    background-color: #12121230;
-}
-
-.menu-container {
-    position: absolute;
-    top: 20px;
-    left: 10px;
+    overflow-x: hidden;
 }
 
 .menu-icon {
+    position: absolute;
+    top: 10px;
+    left: 10px;
     display: flex;
     flex-direction: column;
     justify-content: space-around;
     width: 30px;
     height: 20px;
     cursor: pointer;
+    z-index: 2;
 }
 
 .menu-icon div {
@@ -40,42 +35,47 @@ body {
     transition: 0.3s;
 }
 
-.menu-content {
-    display: none;
-    flex-direction: column;
-    position: absolute;
-    top: 40px;
-    left: 0;
-    background-color: #fff;
-    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
-    z-index: 1;
+.side-menu {
+    height: 100%;
+    width: 250px;
+    position: fixed;
+    top: 0;
+    left: -250px;
+    background-color: #121212;
+    overflow-x: hidden;
+    transition: 0.3s;
+    padding-top: 60px;
 }
 
-.menu-content a {
-    padding: 10px 20px;
+.side-menu a {
+    padding: 10px 15px;
     text-decoration: none;
-    color: #333;
+    font-size: 25px;
+    color: #818181;
     display: block;
     transition: 0.3s;
 }
 
-.menu-content a:hover {
-    background-color: #ddd;
+.side-menu a:hover {
+    color: #f1f1f1;
 }
 
-.open .bar1 {
+.menu-icon.open .bar1 {
     transform: rotate(-45deg) translate(-3px, 6px);
+    background-color: whitesmoke;
 }
 
-.open .bar2 {
+.menu-icon.open .bar2 {
     opacity: 0;
 }
 
-.open .bar3 {
+.menu-icon.open .bar3 {
     transform: rotate(45deg) translate(-3px, -6px);
+    background-color: whitesmoke;
 }
 
-.open-menu {
-    display: flex;
+.side-menu.open {
+    left: 0;
 }
+
 
