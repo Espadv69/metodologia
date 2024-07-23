@@ -11,7 +11,7 @@
 
     <!-- HEADER -->
     <div class="header-user">
-        <img src="./img/yt.gif" alt="">
+        <img src="./img/sand2.jpg" alt="">
     </div>
 
     <!-- INFO USER -->
