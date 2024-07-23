@@ -39,7 +39,16 @@
 
     <div id="myMenu" class="menu">
         <a href="javascript:void(0)" class="closebtn" onclick="closeMenu()">&times;</a>
-        <a href="./usuario.php"><i class="bi bi-person-circle"></i> ver mi canal</a>
+        <div class="menu-info">
+            <img src="./img/profile.jpg" alt="">
+            <div class="info">
+                <div>
+                    <h5>Espadv69</h5>
+                    <p>@espadv._</p>
+                </div>
+                <a href="./usuario.php">ver mi canal</a>
+            </div>
+        </div>
     </div>
 
 
