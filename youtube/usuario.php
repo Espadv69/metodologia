@@ -40,7 +40,7 @@
     </div>
 
     <div class="img-empty">
-        <img src="https://i.pinimg.com/originals/aa/f7/05/aaf705e06726ce3881288ae4be3ac5fe.jpg" alt="">
+        <img src="https://www.gstatic.com/youtube/img/channels/core_channel_no_activity.svg" alt="">
         <h6>Crear Contenido</h6>
         <p>Sube y graba en casa o en cualquier lugar. Todo lo que hagas público aparecerá aquí.</p>
         <button>Crear</button>
