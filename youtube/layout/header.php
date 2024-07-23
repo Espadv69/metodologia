@@ -30,13 +30,10 @@
     
     <div class="side-menu" id="side-menu">
         <div style="display: flex; justify-content: center; padding: 1rem 0;">
-            <img src="./img/yt.png" alt="YouTube" width="100px">
+            <img src="./img/yt-black.png" alt="YouTube" width="150px">
         </div>
         <a href="http://localhost/metodologia/youtube/index.php"><i class="bi bi-house-fill"></i> Home</a>
-        <a href="#" style="display: flex; align-items: center; text-decoration: none;">
-        <i class="icon"></i>
-        Shorts
-    </a>
+        <a href="#"><i class="icon"></i> Shorts</a>
 
 
         <!-- Agregar más enlaces según sea necesario -->
