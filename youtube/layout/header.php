@@ -24,7 +24,7 @@
         <div class="icons">
             <a href="#"><i class="bi bi-bell"></i></a>
             <a href="#"><i class="bi bi-camera-video"></i></a>
-            <a href="#" class="open-menu"><i class="bi bi-person-circle"></i></a>
+            <a href="#" class="open-menu"><img src="./img/profile.jpg" alt="" width="26px" height="26px" style="border-radius: 100%;"></a>
         </div>
     </div>
     
