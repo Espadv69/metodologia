@@ -39,10 +39,7 @@
 
     <div id="myMenu" class="menu">
         <a href="javascript:void(0)" class="closebtn" onclick="closeMenu()">&times;</a>
-        <a href="#">Link 1</a>
-        <a href="#">Link 2</a>
-        <a href="#">Link 3</a>
-        <a href="#">Link 4</a>
+        <a href="./usuario.php"><i class="bi bi-person-circle"></i> ver mi canal</a>
     </div>
 
 
