@@ -36,15 +36,14 @@ body {
 }
 
 .icons a {
+    padding: .6rem;
+    font-size: 26px;
     text-decoration: none;
     color: black;
 }
 
 .icons i {
-    border-radius: 50%;
-    padding: 0.5rem;
-    font-size: 24px;
-    cursor: pointer;
+    font-size: 26px;
 }
 
 .icons i:hover {
@@ -286,10 +285,12 @@ body {
 }
 
 .video-links {
-    margin-top: 3rem;
+    margin: 3rem auto;
+    width: 100%;
+    max-width: 900px;
     display: flex;
     gap: 1.5rem;
-    box-shadow: 0px 2px 1px #00000030;
+    box-shadow: 0px 1px 1px #00000030;
 
     a:first-child {
         margin-left: 1rem;
@@ -318,7 +319,7 @@ body {
     }
 
     img {
-        width: 250px;
+        width: 147px;
     }
 
     p {
@@ -335,6 +336,11 @@ body {
         background: black;
         border-radius: 2rem;
         padding: .5rem 1.6rem;
+        transition: all 200ms ease;
+    }
+
+    button:hover {
+        opacity: .8;
     }
 
 }
