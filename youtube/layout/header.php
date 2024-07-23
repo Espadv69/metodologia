@@ -24,7 +24,7 @@
         <div class="icons">
             <a href="#"><i class="bi bi-bell"></i></a>
             <a href="#"><i class="bi bi-camera-video"></i></a>
-            <a href="#"><i class="bi bi-person-circle"></i></a>
+            <a href="#" class="open-menu"><i class="bi bi-person-circle"></i></a>
         </div>
     </div>
     
@@ -34,9 +34,15 @@
         </div>
         <a href="http://localhost/metodologia/youtube/index.php"><i class="bi bi-house-fill"></i> Home</a>
         <a href="#"><i class="icon"></i> Shorts</a>
-
-
         <!-- Agregar más enlaces según sea necesario -->
+    </div>
+
+    <div id="myMenu" class="menu">
+        <a href="javascript:void(0)" class="closebtn" onclick="closeMenu()">&times;</a>
+        <a href="#">Link 1</a>
+        <a href="#">Link 2</a>
+        <a href="#">Link 3</a>
+        <a href="#">Link 4</a>
     </div>
 
 
