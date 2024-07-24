@@ -89,7 +89,7 @@
                 <!-- LINKS -->
                 <div class="links">
                     <a href="#">Personalizar canal</a>
-                    <a href="#">Gestionar videos</a>
+                    <a href="./gestion_v.php">Gestionar videos</a>
                 </div>
             </div>
         </div>
@@ -109,10 +109,7 @@
     </div><br><br><br>
 
     <!-- El Modal -->
-    <div class="all-modal">
-
         <div id="myModal" class="modal">
-
             <!-- Contenido del Modal -->
             <div class="modal-content">
                 <span class="close">&times;</span>
@@ -124,10 +121,7 @@
                     <button type="button>"><i class="bi bi-share"></i> Compartir</button>
                 </div>
             </div>
-
         </div>
-
-    </div>
 
 
     <script>
