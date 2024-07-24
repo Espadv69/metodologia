@@ -9,8 +9,8 @@
             require_once "./back-end/conn.php";
             
             if(isset($_POST["video_upload"])) {
-                $maxSize = 5242880;
-                $file_name = $_FILES["file_video"]['videos'];
+                $maxSize = 52428800;
+                $file_name = $_FILES["file_video"]["videos"];
 
                 $image_info = explode(" . ", $file_name);
                 $name = format_uri($image_info[0]);
@@ -19,6 +19,33 @@
 
                 $target = "./videos/";
                 $target_file = $target . $target_video;
+
+                $videoFileType = strtolower(pathinfo($file_name, PATHINFO_EXTENSION));
+                $arr_extensions = array(
+                    "mp4", "avi", "3gp", "mov", "mpeg", "mkv", "flv", "wmv", 
+                    "webm", "m4v", "vob", "ogv", "f4v", "f4p", "f4a", "f4b",
+                    "rm", "rmvb", "asf", "ts", "mts", "m2ts", "mxf", "roq",
+                    "nsv", "dv", "divx", "xvid", "amv"
+                );
+
+                if(in_array($videoFileType, $arr_extensions)) {
+
+                    if(($_FILES["file_video"]["size"] >= $maxSize) || ($_FILES["file_video"]["size"] == 0))  {
+                        $error = "Archivo pesado";
+                    }
+
+                } else {
+
+                    if(move_uploaded_file($_FILES["file_video"]["tmp_name"], $target_file)) {
+                        $name = htmlentities($_POST["nombre"]);
+                        $query = $db -> prepare("INSERT INTO video(`nombre`, `ubicacion`) VALUES (:nombre, :ubicacion)");
+
+                        $query -> bindParam(":nombre", $nombre);
+                        $query -> bindParam(":ubicacion", $file_video);
+                        $query -> execute();
+                    }
+
+                }
             }
         ?>
     </head>
