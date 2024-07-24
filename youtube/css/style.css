@@ -269,6 +269,11 @@ body {
             p {
                 color: gray;
                 font-size: 12px;
+
+                a {
+                    text-decoration: underline;
+                    font-weight: bold;
+                }
             }
 
             .links {
