@@ -31,12 +31,12 @@
                     $query->bindParam(":ubicacion", $file_video);
                     $query->execute();
             
-                if ($query->rowCount() > 0) {
-                    header("Location: ./index.php?estado=ok");
-                    exit();
-                } else {
-                    $error = "Error al guardar en la base de datos.";
-                }
+                    if ($query->rowCount() > 0) {
+                        header("Location: ./index.php?estado=ok");
+                        exit();
+                    } else {
+                        $error = "Error al guardar en la base de datos.";
+                    }
                 } else {
                     $error = "No se pudo mover el archivo.";
                 }
