@@ -1,4 +1,4 @@
-<link rel="stylesheet" href="../css/style_navbar.css">
+<link rel="stylesheet" href="./css/style_navbar.css">
 
 <nav class="nav">
     <ul class="nav__ul">
