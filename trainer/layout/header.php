@@ -2,9 +2,9 @@
 
 <nav class="nav">
     <ul class="nav__ul">
-        <li class="nav__li"><a href=""></a></li>
-        <li class="nav__li"><a href=""></a></li>
-        <li class="nav__li"><a href=""></a></li>
-        <li class="nav__li"><a href=""></a></li>
+        <li class="nav__li"><a href="">Link</a></li>
+        <li class="nav__li"><a href="">Link</a></li>
+        <li class="nav__li"><a href="">Link</a></li>
+        <li class="nav__li"><a href="">Link</a></li>
     </ul>
 </nav>
