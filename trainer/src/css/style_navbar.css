@@ -1,0 +1,32 @@
+/* GENERAL */
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    overflow-x: hidden;
+}
+
+/* NAVBAR */
+.nav {
+    margin: auto;
+    width: 100%;
+    max-width: 800px;
+    padding: 1.5rem;
+
+    background: #121212;
+}
+
+.nav__ul {
+    list-style-type: none;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.nav__li {
+    a {
+        text-decoration: none;
+        color: whitesmoke;
+    }
+}
