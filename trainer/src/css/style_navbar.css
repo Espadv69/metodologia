@@ -8,16 +8,17 @@
 
 /* NAVBAR */
 .nav {
-    margin: auto;
-    width: 100%;
-    max-width: 800px;
-    padding: 1.5rem;
+    position: fixed;
 
-    background: #121212;
+    width: 100%;
+
+    background: #ffffff30;
+    backdrop-filter: blur(10px);
 }
 
 .nav__ul {
     list-style-type: none;
+
     display: flex;
     justify-content: space-evenly;
     align-items: center;
@@ -25,8 +26,24 @@
 }
 
 .nav__li {
+    padding: 1.5rem;
+
+    border-bottom: 2px solid #acfff800;
     a {
+        color: white;
+        font-weight: bold;
         text-decoration: none;
-        color: whitesmoke;
+        text-transform: uppercase;
     }
+}
+
+.nav__li:hover {
+    border-bottom: 2px solid rgb(0, 204, 255);
+}
+
+/* MAIN LAYOUT */
+.layout {
+    margin: 13dvh auto;
+    width: 100%;
+    max-width: 900px;
 }
