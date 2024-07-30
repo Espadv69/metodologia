@@ -39,7 +39,7 @@
                     <ul class="dropdown__sub">
 
                         <li class="dropdown__li">
-                            <a href="#" class="dropdown__anchor">Cliente1</a>
+                            <a href="./imm.php" class="dropdown__anchor">Indice Masa Muscular</a>
                         </li>
 
                         <li class="dropdown__li">
