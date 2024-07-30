@@ -1,6 +1,9 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
 
 body {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
     min-height: 100dvh;
 
     font-family: "Roboto", system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
@@ -9,4 +12,64 @@ body {
     background: linear-gradient(90deg, #00000080 0%, #00000065 100%), url("../img/bg.jpg");
     background-size: cover;
     background-repeat: no-repeat;
+}
+
+/* IMM && IMC */
+.h2 {
+    text-align: center;
+}
+
+.immForm {
+    margin: 5dvh auto;
+    width: 100%;
+    max-width: 500px;
+    padding: 1rem;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+
+    background: #ffffff40;
+    box-shadow: 0px 1px 2px gray;
+
+    input,
+    select,
+    button {
+        color: whitesmoke;
+        font-weight: bold;
+
+        border: none;
+        border-left: 2px solid lightblue;
+        border-right: 2px solid lightblue;
+        border-radius: .5rem;
+        outline: none;
+
+        padding: 1rem;
+
+        background: transparent;
+    }
+
+    option {
+        color: black;
+    }
+
+    button {
+        border: 2px solid rgb(0, 191, 255);
+        color: rgb(255, 255, 255);
+    }
+}
+
+.result {
+    color: rgb(255, 255, 255);
+    margin: auto;
+    width: 100%;
+    max-width: 300px;
+    text-align: center;
+    line-height: 1.5;
+    padding: 2rem;
+    background: rgba(0, 191, 255, 0.1);
+    backdrop-filter: blur(5px);
+    box-shadow: 0px 1px 5px rgb(255, 255, 255, .4);
 }
