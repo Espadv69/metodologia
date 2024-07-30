@@ -39,15 +39,15 @@
                     <ul class="dropdown__sub">
 
                         <li class="dropdown__li">
-                            <a href="#" class="dropdown__anchor">Proyecto1</a>
+                            <a href="#" class="dropdown__anchor">Cliente1</a>
                         </li>
 
                         <li class="dropdown__li">
-                            <a href="#" class="dropdown__anchor">Proyecto2</a>
+                            <a href="#" class="dropdown__anchor">Cliente2</a>
                         </li>
 
                         <li class="dropdown__li">
-                            <a href="#" class="dropdown__anchor">Proyecto3</a>
+                            <a href="#" class="dropdown__anchor">Cliente3</a>
                         </li>
 
                     </ul>
@@ -58,8 +58,8 @@
             <li class="dropdown__list">
 
                 <a href="" class="dropdown__link">
-                    <img src="../assets/email.svg" class="dropdown__icon">
-                    <span class="dropdown__span">Contacto</span>
+                    <img src="../assets/projects.svg" class="dropdown__icon">
+                    <span class="dropdown__span">Entrenador</span>
                     <img src="../assets/down.svg" class="dropdown__arrow">
                     <input type="checkbox" class="dropdown__check">
                 </a>
@@ -69,11 +69,15 @@
                     <ul class="dropdown__sub">
 
                         <li class="dropdown__li">
-                            <a href="#" class="dropdown__anchor">Contacto1</a>
+                            <a href="#" class="dropdown__anchor">Entrenador1</a>
                         </li>
 
                         <li class="dropdown__li">
-                            <a href="#" class="dropdown__anchor">Contacto2</a>
+                            <a href="#" class="dropdown__anchor">Entrenador2</a>
+                        </li>
+
+                        <li class="dropdown__li">
+                            <a href="#" class="dropdown__anchor">Entrenador3</a>
                         </li>
 
                     </ul>
