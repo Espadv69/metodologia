@@ -2,60 +2,92 @@
 <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
 
 <nav class="nav">
-    <ul class="nav__ul">
-        <li class="nav__li home"><a href=""><i class="bi bi-house-fill"> Home</i></a></li>
-        <li class="nav__li"><a id="openModal"><i class="bi bi-person-arms-up"></i> Cliente</a></li>
-        <li class="nav__li"><a href=""><i class="bi bi-person-walking"></i> Entrenador</a></li>
-    </ul>
-</nav>
+    <div class="nav__container">
 
-<!-- Modal para Cliente -->
-<div id="clientModal" class="modal">
-    <div class="modal-content">
-        <span class="close">&times;</span>
-        <h2>Iniciar Sesión Cliente</h2>
-        <form>
-            <div>
-                <label for="username">Usuario:</label>
-                <input type="text" id="username" name="username" required>
-            </div>
-            <div>
-                <label for="password">Contraseña:</label>
-                <input type="password" id="password" name="password" required>
-            </div>
+    
+        <h1 class="nav__title">Espadv.</h1>
+    
+        <a href="#menu" class="nav__menu">
+            <img src="../assets/menu.svg" class="nav__icon">
+        </a>
+    
+        <a href="#" class="nav__menu nav__menu--second">
+            <img src="../assets/close.svg" class="nav__icon ">
+        </a>
 
-            <p>Si ha olvidado la contraseña <a href="">pinche aquí</a></p>
+        <ul class="dropdown" id="menu">
+            <li class="dropdown__list">
+                <a href="" class="dropdown__link">
+                    <img src="../assets/house.svg" class="dropdown__icon">
+                    <span class="dropdown__span">Inicio</span>
+                </a>
+            </li>
 
-            <div class="modal-footer">
-                <button type="button">Iniciar Sesión</button>
-                <button type="reset">Borrar</button>
-            </div>
-        </form>
+
+
+            <li class="dropdown__list">
+
+                <a href="" class="dropdown__link">
+                    <img src="../assets/projects.svg" class="dropdown__icon">
+                    <span class="dropdown__span">Cliente</span>
+                    <img src="../assets/down.svg" class="dropdown__arrow">
+                    <input type="checkbox" class="dropdown__check">
+                </a>
+
+
+                <div class="dropdown__content">
+                    <ul class="dropdown__sub">
+
+                        <li class="dropdown__li">
+                            <a href="#" class="dropdown__anchor">Proyecto1</a>
+                        </li>
+
+                        <li class="dropdown__li">
+                            <a href="#" class="dropdown__anchor">Proyecto2</a>
+                        </li>
+
+                        <li class="dropdown__li">
+                            <a href="#" class="dropdown__anchor">Proyecto3</a>
+                        </li>
+
+                    </ul>
+                </div>
+
+            </li>
+
+            <li class="dropdown__list">
+
+                <a href="" class="dropdown__link">
+                    <img src="../assets/email.svg" class="dropdown__icon">
+                    <span class="dropdown__span">Contacto</span>
+                    <img src="../assets/down.svg" class="dropdown__arrow">
+                    <input type="checkbox" class="dropdown__check">
+                </a>
+                        
+
+                <div class="dropdown__content">
+                    <ul class="dropdown__sub">
+
+                        <li class="dropdown__li">
+                            <a href="#" class="dropdown__anchor">Contacto1</a>
+                        </li>
+
+                        <li class="dropdown__li">
+                            <a href="#" class="dropdown__anchor">Contacto2</a>
+                        </li>
+
+                    </ul>
+                </div>
+
+            </li>
+
+            <li class="dropdown__list">
+                <a href="" class="dropdown__link">
+                    <img src="../assets/help.svg" class="dropdown__icon">
+                    <span class="dropdown__span">Ayuda</span>
+                </a>
+            </li>
+        </ul>
+
     </div>
-</div>
-
-<script>
-    // Obtener elementos del DOM
-    const modal = document.getElementById("clientModal");
-    const openModal = document.getElementById("openModal");
-    const closeModalButtons = document.querySelectorAll(".close");
-
-    // Abrir modal
-    openModal.onclick = function() {
-        modal.style.display = "block";
-    }
-
-    // Cerrar modal
-    closeModalButtons.forEach(button => {
-        button.onclick = function() {
-            modal.style.display = "none";
-        }
-    });
-
-    // Cerrar modal si se hace clic fuera de él
-    window.onclick = function(event) {
-        if (event.target === modal) {
-            modal.style.display = "none";
-        }
-    }
-</script>
+</nav>
