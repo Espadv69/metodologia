@@ -8,7 +8,7 @@
 
 /* NAVBAR */
 .nav{
-    background-color: #0066ff;
+    background-color: #7bebff70;
 
     --img1: scale(1);
     --img2: scale(0);
@@ -60,7 +60,8 @@
 
 .dropdown {
     position: absolute;
-    background: #000;
+    background: #00000080;
+    border: 2px solid whitesmoke;
     width: 50%;
     max-width: 300px;
     right: 0;
@@ -83,7 +84,7 @@
 
 .dropdown__link {
     text-decoration: none;
-    color: rgb(184, 187, 191);
+    color: rgb(255, 255, 255);
 
     padding: 1em .7em;
 
@@ -98,7 +99,7 @@
 .dropdown__list:has( :checked ) {
     --rows: 1fr;
     --rotate: rotate(180deg);
-    --bg: #0066ff20;
+    --bg: #ffffff63;
 }
 
 .dropdown__check {
@@ -123,7 +124,7 @@
 
 .dropdown__sub {
     overflow: hidden;
-    background: teal;
+    background: #00000060;
 }
 
 .dropdown__li {
@@ -135,96 +136,6 @@
 .dropdown__anchor {
     padding: 1em 0;
     display: block;
-    color: #B6BABE;
+    color: #ffffff;
     text-decoration: none;
-}
-
-/* Estilos del modal */
-.modal {
-    display: none; /* Oculto por defecto */
-    position: fixed;
-    z-index: 1;
-    left: 0;
-    top: 0;
-    width: 100%;
-    height: 100%;
-    overflow: auto;
-    padding-top: 60px;
-}
-
-.modal-content {
-    margin: 20dvh auto;
-    width: 100%;
-    max-width: 500px;
-    padding: 20px;
-
-    border: 2px solid #ffffff;
-    border-radius: 1rem;
-
-    background: #008c96;
-
-    h2 {
-        text-align: center;
-        margin-bottom: 1rem;
-    }
-
-    form {
-        display: flex;
-        justify-content: center;
-        flex-direction: column;
-        gap: 1rem;
-
-        input {
-            border: none;
-            width: 200px;
-        }
-    }
-
-    p {
-        text-align: center;
-        a {
-            text-decoration: none;
-            color: rgb(0, 191, 255);
-        }
-    }
-
-    div {
-        display: flex;
-        justify-content: center;
-        gap: .5rem;
-    }
-
-    .modal-footer {
-        display: flex;
-        justify-content: space-between;
-        flex-wrap: wrap;
-        gap: 0;
-    
-        button {
-            cursor: pointer;
-    
-            width: 120px;
-            padding: 0.5rem 1rem;
-            
-            color: whitesmoke;
-            border: 2px solid whitesmoke;
-    
-            background: transparent;
-        }
-    }
-
-}
-
-.close {
-    color: #aaa;
-    float: right;
-    font-size: 28px;
-    font-weight: bold;
-}
-
-.close:hover,
-.close:focus {
-    color: rgb(255, 255, 255);
-    text-decoration: none;
-    cursor: pointer;
 }
