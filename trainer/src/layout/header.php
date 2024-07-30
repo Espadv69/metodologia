@@ -17,7 +17,7 @@
 
         <ul class="dropdown" id="menu">
             <li class="dropdown__list">
-                <a href="" class="dropdown__link">
+                <a href="./home.php" class="dropdown__link">
                     <img src="../assets/house.svg" class="dropdown__icon">
                     <span class="dropdown__span">Inicio</span>
                 </a>
@@ -43,7 +43,7 @@
                         </li>
 
                         <li class="dropdown__li">
-                            <a href="#" class="dropdown__anchor">Cliente2</a>
+                            <a href="./imc.php" class="dropdown__anchor">Indice Masa Corporal</a>
                         </li>
 
                         <li class="dropdown__li">
