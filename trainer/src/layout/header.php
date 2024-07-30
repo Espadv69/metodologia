@@ -46,10 +46,6 @@
                             <a href="./imc.php" class="dropdown__anchor">Indice Masa Corporal</a>
                         </li>
 
-                        <li class="dropdown__li">
-                            <a href="#" class="dropdown__anchor">Cliente3</a>
-                        </li>
-
                     </ul>
                 </div>
 
