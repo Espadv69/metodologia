@@ -9,8 +9,7 @@
     <body>
         <?php require_once "../layout/header.php" ?>
 
-        <main class="layout">
             <h3 style="text-align: center;">Hola mundo</h3>
-        </main>
+
     </body>
 </html>
