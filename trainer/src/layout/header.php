@@ -5,7 +5,7 @@
     <div class="nav__container">
 
     
-        <h1 class="nav__title">Your Trusted Coach</h1>
+        <h1 class="nav__title"><img src="../img/logo.png" alt="" width="100px"></h1>
     
         <a href="#menu" class="nav__menu">
             <img src="../assets/menu.svg" class="nav__icon">
