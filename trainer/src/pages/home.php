@@ -14,7 +14,6 @@
                 display: grid;
                 place-content: center;
                 padding: .2rem;
-                backdrop-filter: blur(5px);
                 overflow-y: hidden;
 
                 img {
