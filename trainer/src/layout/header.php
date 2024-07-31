@@ -73,7 +73,7 @@
                         </li>
 
                         <li class="dropdown__li">
-                            <a href="#" class="dropdown__anchor">Ejercicios de resistencia</a>
+                            <a href="./ejercicios-r.php" class="dropdown__anchor">Ejercicios de resistencia</a>
                         </li>
 
                     </ul>
