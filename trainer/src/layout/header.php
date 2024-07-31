@@ -65,15 +65,15 @@
                     <ul class="dropdown__sub">
 
                         <li class="dropdown__li">
-                            <a href="#" class="dropdown__anchor">Entrenador1</a>
+                            <a href="./calendario.php" class="dropdown__anchor">Calendario</a>
                         </li>
 
                         <li class="dropdown__li">
-                            <a href="#" class="dropdown__anchor">Entrenador2</a>
+                            <a href="./ejercicios-f.php" class="dropdown__anchor">Ejercicios de fuerza</a>
                         </li>
 
                         <li class="dropdown__li">
-                            <a href="#" class="dropdown__anchor">Entrenador3</a>
+                            <a href="#" class="dropdown__anchor">Ejercicios de resistencia</a>
                         </li>
 
                     </ul>
