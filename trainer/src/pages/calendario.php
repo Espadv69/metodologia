@@ -29,6 +29,7 @@
             padding: 10px;
             text-align: center;
             min-width: 100px;
+            font-weight: bold;
         }
 
         th {
@@ -36,56 +37,46 @@
             color: white;
         }
 
-        .day {
-            background: transparent;
-            font-weight: bold;
-        }
-
-        .session {
-            padding: 5px;
-        }
-
-        @media screen and (max-width: 730px) {
-            table, thead, tbody, th, td, tr {
-                display: block;
-                color: whitesmoke;
-            }
-
-            tr {
-                margin-bottom: 15px;
-            }
-
-            td {
-                position: relative;
-                text-align: right;
-            }
-
-            td:before {
-                position: absolute;
-                top: 50%;
-                left: 10px;
-                width: 45%;
-                padding-right: 10px;
-                white-space: nowrap;
-                transform: translateY(-50%);
-                content: attr(data-label);
-                font-weight: bold;
-            }
-
-            th {
-                display: none;
+        /* Estilos Responsivos */
+        @media (max-width: 768px) {
+            th, td {
+                padding: 5px;
+                min-width: 60px;
+                font-size: 14px;
             }
         }
+
+        @media (max-width: 480px) {
+            th, td {
+                padding: 5px;
+                min-width: 50px;
+                font-size: 12px;
+            }
+
+            th:nth-child(n+6), td:nth-child(n+6) {
+                display: none; /* Oculta Sábado y Domingo en pantallas muy pequeñas */
+            }
+        }
+
     </style>
 </head>
 <body>
     <?php require_once "../layout/header.php" ?>
+
+    <?php
+    
+        $days_count = date('t');
+        $current_day = date('d');
+        $week_day_first = date('N', mktime(0, 0, 0, date('m'), 1, date('Y')));
+
+    ?>
+
+
     <div class="container">
         <h1>Calendario de Entrenador</h1>
         <table>
             <thead>
                 <tr>
-                    <th>Hora</th>
                     <th>Lunes</th>
                     <th>Martes</th>
                     <th>Miércoles</th>
@@ -96,26 +87,80 @@
                 </tr>
             </thead>
             <tbody>
+                <?php for($w = 1 - $week_day_first + 1; $w <= $days_count; $w = $w + 7): ?>
                 <tr>
-                    <td class="day" data-label="Hora">8:00 - 9:00</td>
-                    <td class="session" data-label="Lunes">Yoga</td>
-                    <td class="session" data-label="Martes">HIIT</td>
-                    <td class="session" data-label="Miércoles">Descanso</td>
-                    <td class="session" data-label="Jueves">Cardio</td>
-                    <td class="session" data-label="Viernes">Pesas</td>
-                    <td class="session" data-label="Sábado">Natación</td>
-                    <td class="session" data-label="Domingo">Ciclismo</td>
+                    <?php $counter = 0 ?>
+                    <?php for($d = $w; $d <= $w + 6; $d++): ?>
+
+                        <td style="<?php if($counter > 4){ ?> color: white; background-color: #0066ff40; <?php } ?>
+                        <?php if($current_day == $d){ ?> background-color: gray; color: whitesmoke; font-weight: bold; <?php } ?>">
+                            <?php echo ($d > 0 ? ($d > $days_count ? '' : $d) : ''); ?>
+                        </td>
+
+                    <?php $counter++; endfor ?>
                 </tr>
+                <?php endfor?>
+
+            </tbody>
+        </table>
+        <table>
+            <thead>
                 <tr>
-                    <td class="day" data-label="Hora">10:00 - 11:00</td>
-                    <td class="session" data-label="Lunes">Pesas</td>
-                    <td class="session" data-label="Martes">Yoga</td>
-                    <td class="session" data-label="Miércoles">HIIT</td>
-                    <td class="session" data-label="Jueves">Descanso</td>
-                    <td class="session" data-label="Viernes">Cardio</td>
-                    <td class="session" data-label="Sábado">Ciclismo</td>
-                    <td class="session" data-label="Domingo">Natación</td>
+                    <th>Lunes</th>
+                    <th>Martes</th>
+                    <th>Miercoles</th>
+                    <th>Jueves</th>
+                    <th>Viernes</th>
+                    <th>Sabado</th>
+                    <th>Domingo</th>
                 </tr>
+            </thead>
+            <tbody>
+            <tr>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td>Cardio</td>
+                <td>Yoga</td>
+                <td>Descanso</td>
+                <td>Descanso</td>
+            </tr>
+            <tr>
+                <td>Natación</td>
+                <td>Spinning</td>
+                <td>Pilates</td>
+                <td>Boxeo</td>
+                <td>Ciclismo</td>
+                <td>Descanso</td>
+                <td>Senderismo</td>
+            </tr>
+            <tr>
+                <td>CrossFit</td>
+                <td>Zumba</td>
+                <td>Baloncesto</td>
+                <td>HIIT</td>
+                <td>Escalada</td>
+                <td>Descanso</td>
+                <td>Descanso</td>
+            </tr>
+            <tr>
+                <td>Full body</td>
+                <td>Fútbol</td>
+                <td>Cardio</td>
+                <td>Natación</td>
+                <td>Pilates</td>
+                <td>Descanso</td>
+                <td>Descanso</td>
+            </tr>
+            <tr>
+                <td>Ciclismo</td>
+                <td>Senderismo</td>
+                <td>Descanso</td>
+                <td>Escalada</td>
+                <td>CrossFit</td>
+                <td>Descanso</td>
+                <td>Descanso</td>
+            </tr>
             </tbody>
         </table>
     </div>
