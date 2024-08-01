@@ -76,6 +76,10 @@
                             <a href="./ejercicios-r.php" class="dropdown__anchor">Ejercicios de resistencia</a>
                         </li>
 
+                        <li class="dropdown__li">
+                            <a href="./medidas.php" class="dropdown__anchor">Medidas</a>
+                        </li>
+
                     </ul>
                 </div>
 
