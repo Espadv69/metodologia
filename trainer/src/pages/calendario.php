@@ -14,7 +14,6 @@
         .container {
             width: 100%;
             margin: 0 auto;
-            padding: 10px;
             overflow-x: auto;
         }
 
@@ -26,7 +25,7 @@
 
         th, td {
             border: 1px solid #ddd;
-            padding: 10px;
+            padding: 1rem;
             text-align: center;
             min-width: 100px;
             font-weight: bold;
@@ -103,6 +102,8 @@
 
             </tbody>
         </table>
+    </div>
+    <div class="container">
         <table>
             <thead>
                 <tr>
